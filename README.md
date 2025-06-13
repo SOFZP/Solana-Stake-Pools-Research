@@ -249,7 +249,7 @@ Validator list viewable at: https://www.jagpool.xyz/pool
 
 ---
 
-## ♾️ Definity Staked SOL
+## 🐉 Definity Staked SOL
 
 **Website**: [definity.finance](https://www.definity.finance/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Bvbu55B991evqqhLtKcyTZjzQ4EQzRUwtf9T4CcpMmPL)  

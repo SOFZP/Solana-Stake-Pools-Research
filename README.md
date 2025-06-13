@@ -36,7 +36,7 @@ The document is intended for validator operators, contributors, and tooling deve
 
 ---
 
-## 1. 🧠 Jito Stake Pool
+## 🧠 Jito Stake Pool
 
 **Website**: [jito.network](https://www.jito.network/stakenet/steward/)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Jito4APyf642JPZPx3hGc6WWJ8zPKtRbRs4P815Awbb)  
@@ -58,7 +58,7 @@ https://kobe.mainnet.jito.network/api/v1/steward_events?limit=10000&event_type=S
 
 ---
 
-## 2. 🥷 Shinobi Performance Pool
+## 🥷 Shinobi Performance Pool
 
 **Website**: [xshin.fi](https://xshin.fi/#Validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/spp1mo6shdcrRyqDK2zdurJ8H5uttZE6H6oVjHxN1QN)  
@@ -77,7 +77,7 @@ https://github.com/1000xsh/xshin-data
 
 ---
 
-## 3. 💻 Edgevana Liquid Staking
+## 💻 Edgevana Liquid Staking
 
 **Website**: [stake.edgevana.com](https://stake.edgevana.com/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/edgejNWAqkePLpi5sHRxT9vHi7u3kSHP9cocABPKiWZ)  
@@ -97,7 +97,7 @@ https://api.stake.edgevana.com/api/v2/scores
 
 ---
 
-## 4. 📊 JPool Delegation Program
+## 📊 JPool Delegation Program
 
 **Website**: [svt.one](https://svt.one/)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/CtMyWsrUtAwXWiGr9WjHT5fC3p3fgV8cyGpLTo2LJzG1)  
@@ -123,7 +123,7 @@ https://api.thevalidators.io/validators-history/history?network=testnet&identity
 
 ---
 
-## 5. 🔒 Vault Stake Pool
+## 🔒 Vault Stake Pool
 
 **Website**: [thevault.finance](https://thevault.finance/dapp/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Fu9BYC6tWBo1KMKaP3CFoKfRhqv9akmy3DuYwnCyWiyC)  
@@ -148,7 +148,7 @@ https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads
 
 ---
 
-## 6. 🔥 Blazestake
+## 🔥 Blazestake
 
 **Website**: [stake.solblaze.org](https://stake.solblaze.org/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/stk9ApL5HeVAwPLr3TLhDXdZS8ptVu7zp6ov8HFDuMi)  
@@ -177,7 +177,7 @@ https://stake.solblaze.org/api/v1/cls_boost?validator=...
 
 ---
 
-## 7. 🪁 AeroPool
+## 🪁 AeroPool
 
 **Website**: [aeropool.io](https://www.aeropool.io/apply)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/aero2ePURjuEgLKTzcUmF6RypBncBGd7pMUYCoSsVJ6)  
@@ -195,7 +195,7 @@ Participant list available at: https://www.aeropool.io/validators
 
 ---
 
-## 8. 🦕 DynoSOL
+## 🦕 DynoSOL
 
 **Website**: [dynosol.io](https://www.dynosol.io) *(site may be unstable)*  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/DpooSqZRL3qCmiq82YyB4zWmLfH3iEqx2gy8f2B6zjru)  
@@ -220,7 +220,7 @@ For contact, see [Discord message (direct)](https://discord.com/channels/4282953
 
 ---
 
-## 9. 🐈‍⬛ Jagpool
+## 🐈‍⬛ Jagpool
 
 **Website**: [jagpool.xyz](https://www.jagpool.xyz/pool)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/jagEdDepWUgexiu4jxojcRWcVKKwFqgZBBuAoGu2BxM)  
@@ -249,7 +249,7 @@ Validator list viewable at: https://www.jagpool.xyz/pool
 
 ---
 
-## 10. ♾️ Definity Staked SOL
+## ♾️ Definity Staked SOL
 
 **Website**: [definity.finance](https://www.definity.finance/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Bvbu55B991evqqhLtKcyTZjzQ4EQzRUwtf9T4CcpMmPL)  
@@ -267,7 +267,7 @@ Not available
 
 ---
 
-## 11. 🔥 Firedancer Delegation Program
+## 🔥 Firedancer Delegation Program
 
 **Website**: [delegation.firedancer.io](https://delegation.firedancer.io/delegation-program)  
 **Solana Compass Pool Page**: Not available  
@@ -287,7 +287,7 @@ Current validator list: https://delegation.firedancer.io/validators
 
 ---
 
-## 12. 🥩 Marinade (PSR Program)
+## 🥩 Marinade (PSR Program)
 
 **Website**: [psr.marinade.finance](https://psr.marinade.finance)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/marinade)  

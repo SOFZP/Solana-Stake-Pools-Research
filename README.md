@@ -296,8 +296,7 @@ Validators who have submitted applications: https://delegation.firedancer.io/val
 **Delegation Frequency**: Every epoch  
 **Recommended Commission**: Flexible; any value allowed  
 **Blacklist Policy**: None — delegation is algorithmic, no manual exclusions  
-❗️ **Important Note**:
-- The use of Marinade by SFDP participants most often leads to ⚠️ **rejection from the SFDP program**.  
+❗️ **Important Note**: The use of Marinade by SFDP participants most often leads to **rejection from the SFDP program** ❗️    
 
 **Requirements**:
 - Must place a bond and submit a bid  

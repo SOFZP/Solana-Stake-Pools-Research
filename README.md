@@ -73,3 +73,83 @@ https://github.com/1000xsh/xshin-data
 ```
 https://api.stake.edgevana.com/api/v2/scores
 ```
+
+---
+
+## 4. 📊 JPool Delegation Program
+
+**Website**: [svt.one](https://svt.one/)  
+**Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/CtMyWsrUtAwXWiGr9WjHT5fC3p3fgV8cyGpLTo2LJzG1)  
+**Discord**: [Join](https://discord.gg/HAqkz9gC)  
+**Delegation Frequency**: Every 5 epochs  
+**Recommended Commission**: 0% staking / 10% MEV (must not increase more than +3%)  
+**Blacklist Policy**: Undefined; possibly triggered by suspicious behavior  
+**Requirements**:
+- Top 500 APY over the last 10 epochs
+- JPool validator score among top 350
+- Active presence and community contribution  
+  (see [scoring system](https://docs.jpool.one/technical-details/smart-strategy/validator-scoring-system))
+
+**APIs**:  
+```
+https://api.thevalidators.io/jpool-scores/$EPOCH_NUMBER/$THIS_SOLANA_VOTE_ACCOUNT  
+https://api.thevalidators.io/validators-history/history?network=mainnet&vote_id=$THIS_SOLANA_VOTE_ACCOUNT&epoch_count=1000&epoch_from=$LAST_EPOCH_NUMBER  
+https://api.thevalidators.io/validators/list?network=mainnet&select=...  
+https://api.thevalidators.io/jpool-scores/800  
+Testnet History (optional):  
+https://api.thevalidators.io/validators-history/history?network=testnet&identity=<TESTNET_IDENTITY>&epoch_count=200
+```
+
+---
+
+## 5. 🔒 Vault Stake Pool
+
+**Website**: [thevault.finance](https://thevault.finance/dapp/validators)  
+**Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Fu9BYC6tWBo1KMKaP3CFoKfRhqv9akmy3DuYwnCyWiyC)  
+**Discord**: [Join](https://discord.gg/aQC53CGgQY) · [Twitter](https://x.com/thevaultfinance)  
+**Delegation Frequency**: Every epoch; validators are queued and added in batches  
+**Recommended Commission**: 5% staking / 10% MEV  
+**Blacklist Policy**: Misbehavior such as sandwiching, ignoring governance (e.g., SIMD votes), or inactivity  
+**Requirements**:
+- Proven track record of contribution to the ecosystem
+- Apply via [SaaS program](https://docs.thevault.finance/validators/stake-as-a-service-saas)
+- Detailed criteria in:
+  - [Application Process](https://docs.thevault.finance/validators/validator-application-process)  
+  - [Pool Strategy](https://docs.thevault.finance/validators/get-stake-from-the-pool)  
+  - [Kamino Strategy](https://docs.thevault.finance/validators/kamino-multiply-strategy)
+
+**APIs**:  
+```
+https://raw.githubusercontent.com/SolanaVault/stakebot-data/main/bot-stats-latest.txt  
+https://raw.githubusercontent.com/SolanaVault/stakebot-data/main/800/bot-stats-355971.json  
+https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads/main/<EPOCH>/invoices.json
+```
+
+---
+
+## 6. 🔥 Blazestake
+
+**Website**: [stake.solblaze.org](https://stake.solblaze.org/validators)  
+**Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/stk9ApL5HeVAwPLr3TLhDXdZS8ptVu7zp6ov8HFDuMi)  
+**Discord**: [Join](https://discord.gg/wZNZ3BTG) · [Twitter](https://twitter.com/solblaze_org)  
+**Delegation Frequency**: Every epoch  
+**Recommended Commission**: 5% staking / 10% MEV  
+🔹 *Note: Validators with >50k SOL stake may qualify for 0%/0% delegation.*  
+**Blacklist Policy**: Unspecified  
+**Requirements**:
+- Highest estimated APY among candidates
+- Technical and social presence encouraged
+- Full criteria in [delegation docs](https://stake-docs.solblaze.org/protocol/delegation-strategy)
+- Optional: direct validator integration on your site ([instructions](https://stake-docs.solblaze.org/developers/integrate))
+
+**APIs**:  
+```
+https://stake.solblaze.org/api/v1/validator_set  
+https://stake.solblaze.org/api/v1/validator_count  
+https://stake.solblaze.org/api/v1/apy  
+https://stake.solblaze.org/api/v1/cls_applied_validator_stake?validator=...  
+https://stake.solblaze.org/api/v1/cls_boost?validator=...
+```
+
+📧 To apply, send an email to `contact@solblaze.org` with the subject:  
+**“Request to Join BlazeStake Pool”**

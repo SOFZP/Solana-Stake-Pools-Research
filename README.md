@@ -100,7 +100,7 @@ https://api.stake.edgevana.com/api/v2/scores
 
 ## 📊 JPool Delegation Program
 
-**Website**: [svt.one](https://svt.one/), [jpool.one](https://app.jpool.one/validators)
+**Website**: [svt.one](https://svt.one/), [jpool.one](https://app.jpool.one/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/CtMyWsrUtAwXWiGr9WjHT5fC3p3fgV8cyGpLTo2LJzG1)  
 **Discord**: [Join](https://discord.gg/HAqkz9gC)  
 **Delegation Frequency**: Every epoch, 5 epochs scoring cycle  
@@ -141,13 +141,13 @@ https://api.thevalidators.io/validators-history/history?network=testnet&identity
 - Detailed criteria in:  
   - [Application Process](https://docs.thevault.finance/validators/validator-application-process)  
   - [General Delegation Criteria](https://docs.thevault.finance/validators/get-stake-from-the-pool)  
-- Additional feature: [Kamino Multiply Strategy](https://docs.thevault.finance/validators/kamino-multiply-strategy)  
+Additional feature: [Kamino Multiply Strategy](https://docs.thevault.finance/validators/kamino-multiply-strategy)  
 
 **APIs**:  
 ```
 https://raw.githubusercontent.com/SolanaVault/stakebot-data/main/bot-stats-latest.txt  
-https://raw.githubusercontent.com/SolanaVault/stakebot-data/main/800/bot-stats-355971.json  
-https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads/main/<EPOCH>/invoices.json
+https://raw.githubusercontent.com/SolanaVault/stakebot-data/main/<EPOCH>/<FILENAME_FROM_PREVIOUS_QUERY>  
+https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads/main/<EPOCH>/invoices.json  
 ```
 
 ---
@@ -158,26 +158,24 @@ https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/stk9ApL5HeVAwPLr3TLhDXdZS8ptVu7zp6ov8HFDuMi)  
 **Discord**: [Join](https://discord.gg/wZNZ3BTG) · [Twitter](https://twitter.com/solblaze_org)  
 **Delegation Frequency**: Every epoch  
-**Recommended Commission**: 5% staking / 10% MEV  
-🔹 *Note: Validators with >50k SOL stake may qualify only with 0% staking / 0% MEV*  
+**Recommended Commission**: 5% staking / 10% MEV, *note: Validators with >50k SOL stake may qualify only with 0% staking / 0% MEV*  
 **Blacklist Policy**: Unspecified  
-**Requirements**:
-- Highest estimated APY among candidates
-- Technical and social presence encouraged
-- Full criteria in [delegation docs](https://stake-docs.solblaze.org/protocol/delegation-strategy)
-- Optional: direct validator integration on your site ([instructions](https://stake-docs.solblaze.org/developers/integrate))
+**Requirements**:  
+- Highest estimated APY among candidates  
+- Technical and social presence encouraged  
+- Full criteria in [delegation docs](https://stake-docs.solblaze.org/protocol/delegation-strategy)  
+- Optional: direct staking integration on your site ([instructions](https://stake-docs.solblaze.org/developers/integrate))  
+Also, to apply you may send an email to `contact@solblaze.org` with the subject: **“Request to Join BlazeStake Pool”**  
 
 **APIs**:  
 ```
 https://stake.solblaze.org/api/v1/validator_set  
 https://stake.solblaze.org/api/v1/validator_count  
 https://stake.solblaze.org/api/v1/apy  
-https://stake.solblaze.org/api/v1/cls_applied_validator_stake?validator=...  
-https://stake.solblaze.org/api/v1/cls_boost?validator=...
+https://stake.solblaze.org/api/v1/cls_applied_validator_stake?validator=<VOTE_ACCOUNT>  
+https://stake.solblaze.org/api/v1/cls_boost?validator=<VOTE_ACCOUNT>
 ```
 
-📧 To apply, send an email to `contact@solblaze.org` with the subject:  
-**“Request to Join BlazeStake Pool”**
 
 ---
 
@@ -201,10 +199,10 @@ Participant list available at: https://www.aeropool.io/validators
 
 ## 🦕 DynoSOL
 
-**Website**: [dynosol.io](https://www.dynosol.io) *(site need to be verified, DYOR)*  
+**Website**: [dynosol.io](https://www.dynosol.io) *(need to be verified, DYOR)*  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/DpooSqZRL3qCmiq82YyB4zWmLfH3iEqx2gy8f2B6zjru)  
 **Twitter**: [@DynoSOL_](https://x.com/DynoSOL_) *(currently suspended)*  
-**Delegation Frequency**: Every epoch  
+**Delegation Frequency**: Likely every epoch (unspecified)  
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**:
 - Excessive commission increases
@@ -212,14 +210,15 @@ Participant list available at: https://www.aeropool.io/validators
 - Lack of validator activity
 
 **Requirements**:
-- 100+ epochs of consistent activity
-- 99%+ uptime
-- Validator program launched in epoch 797 (approx. 4 epochs ago)
-- Currently 27 validators with ~500k SOL delegated
+- 100+ epochs of consistent activity  
+- 99%+ uptime  
+
+This new stakepool launched only in epoch 797  
+Currently 27 validators with ~500k SOL delegated  
 
 **APIs**:  
 Not available.  
-Participant list not available on site.
+Participant list not available on site.  
 
 ---
 
@@ -228,23 +227,23 @@ Participant list not available on site.
 **Website**: [jagpool.xyz](https://www.jagpool.xyz/pool)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/jagEdDepWUgexiu4jxojcRWcVKKwFqgZBBuAoGu2BxM)  
 **Twitter**: [@JagPool_xyz](https://x.com/JagPool_xyz)  
-**Delegation Frequency**: Every 3 epochs  
+**Delegation Frequency**: Every 3 epochs scoring cycle  
 **Recommended Commission**: 5% staking / 10% MEV  
-**Blacklist Policy**:
-- Excessive commission hikes
-- Sandwiching or malicious MEV
-- Long-term inactivity
+**Blacklist Policy**:  
+- Excessive commission hikes  
+- Sandwiching or malicious MEV  
+- Long-term online inactivity  
 
 **Requirements**:
-- Operate from Latin America (LATAM) region
-- Be active in the region for at least 10 epochs
-- Have SFDP inclusion or 40k+ SOL stake
-- Maintain online presence (website or Twitter)
-- Full criteria:
+- Operate from Latin America (LATAM) region  
+- Be active in the region for at least 10 epochs  
+- Have SFDP inclusion or 40k+ SOL stake  
+- Maintain online presence (website or Twitter)  
+- Full criteria:  
   - [Delegation Criteria](https://docs.jagpool.xyz/DELEGATION-STRATEGY/Delegation-Criteria)  
   - [Performance Score](https://docs.jagpool.xyz/DELEGATION-STRATEGY/Performance-Score)  
   - [Application Process](https://docs.jagpool.xyz/DELEGATION-STRATEGY/Validator-Application-Process)  
-  - [Community Goods](https://docs.jagpool.xyz/DELEGATION-STRATEGY/Community-Goods)
+  - [Community Goods](https://docs.jagpool.xyz/DELEGATION-STRATEGY/Community-Goods)  
 
 **APIs**:  
 Not available.  
@@ -254,16 +253,16 @@ Validator list viewable at: https://www.jagpool.xyz/pool
 
 ## 🐉 Definity Staked SOL
 
-**Website**: [definity.finance](https://www.definity.finance/validators) *(site need to be verified, DYOR)* 
+**Website**: [definity.finance](https://www.definity.finance/validators) *(need to be verified, DYOR)*  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Bvbu55B991evqqhLtKcyTZjzQ4EQzRUwtf9T4CcpMmPL)  
 **Twitter**: [@realdefinity](https://x.com/realdefinity)  
 **Delegation Frequency**: Every epoch (likely)  
 **Recommended Commission**: 5% staking / 10% MEV  
-**Blacklist Policy**: Exclusion for malicious validator behavior  
+**Blacklist Policy**: malicious validator behavior  
 **Requirements**:
-- Validator located in Asia-Pacific (APAC) region
-- Goal: build geographic decentralization
-- Strategy: [staking strategy](https://www.definity.finance/staking-strategy)
+- Validator located in Asia-Pacific (APAC) region  
+- Goal: build geographic decentralization  
+- Strategy: [staking strategy](https://www.definity.finance/staking-strategy)  
 
 **APIs**:  
 Not available
@@ -273,20 +272,19 @@ Not available
 ## 🔥 Firedancer Delegation Program
 
 **Website**: [delegation.firedancer.io](https://delegation.firedancer.io/delegation-program)  
-**Solana Compass Pool Page**: Not available  
 **Solscan Account**: [View Stake Accounts](https://solscan.io/account/8fxe1qGoDVLtqe9PAFyV4kR6zryTDyGQYb9AZQVUCvpM#stakeAccounts)  
-**Delegation Frequency**: Program starts in a few weeks; 3-month rotation cycle  
+**Delegation Frequency**: Program starts in a few weeks from June 2025; 3-month rotation cycle  
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**: Automatic exclusion upon SFDP removal  
 **Requirements**:
 - Must be an active SFDP validator
 - Minimum 50k SOL stake
-- Validator must run Firedancer client (or be ready to migrate)
+- Validator must run Firedancer client on mainnet
 - Details: [intro article (June 9)](https://delegation.firedancer.io/blog/introducing-the-firedancer-delegation-program)
 
 **APIs**:  
 Not available  
-Current validator list: https://delegation.firedancer.io/validators
+Validators who have submitted applications: https://delegation.firedancer.io/validators
 
 ---
 
@@ -299,18 +297,17 @@ Current validator list: https://delegation.firedancer.io/validators
 **Recommended Commission**: Flexible; any value allowed  
 **Blacklist Policy**: None — delegation is algorithmic, no manual exclusions  
 **Special Note**:
-- Validators using Marinade are **not eligible for SFDP**
-- Involvement may lead to disqualification from other delegation programs
+- The use of Marinade by SFDP participants most often leads to **rejection from the SFDP program**.  
 
 **Requirements**:
-- Must place a bond and submit a bid
-- Technical guide: [Validator Bonds CLI](https://github.com/marinade-finance/validator-bonds/blob/main/packages/validator-bonds-cli/README.md)
+- Must place a bond and submit a bid  
+- Technical guide: [Validator Bonds CLI](https://github.com/marinade-finance/validator-bonds/blob/main/packages/validator-bonds-cli/README.md)  
 
 **APIs**:  
 ```
 https://validators-api.marinade.finance/validators?epochs=10&limit=1000000  
-https://validators-api.marinade.finance/validators?epochs=0&limit=10&query_vote_accounts=$YOUR_VOTE_ACCOUNT  
-https://validators-api.marinade.finance/validators?limit=9999&query_vote_accounts=$YOUR_VOTE_ACCOUNT  
+https://validators-api.marinade.finance/validators?epochs=0&limit=10&query_vote_accounts=<VOTE_ACCOUNT>  
+https://validators-api.marinade.finance/validators?limit=9999&query_vote_accounts=<VOTE_ACCOUNT>  
 https://validators-api.marinade.finance/rewards?epochs=10  
 https://validators-api.marinade.finance/reports/staking
 ```
@@ -342,7 +339,7 @@ This section will be populated with open-source Bash tools and API integrations 
 
 ## ⚠️ Disclaimer
 
-I am currently working on a unified script that automates validator eligibility checks across multiple Solana stake pools using official APIs and on-chain data.
+**I am currently working on a unified script that automates validator eligibility checks across multiple Solana stake pools using official APIs and on-chain data.**
 
 All data in this document is sourced from **open and public sources** as of June 2025.  
 While care has been taken to ensure accuracy, **I am not responsible for changes in delegation policies, pool criteria, or any decisions made by these third-party stake pools**.

@@ -198,7 +198,7 @@ Participant list available at: https://www.aeropool.io/validators
 
 ## 🦕 DynoSOL
 
-**Website**: [dynosol.io](https://www.dynosol.io) *(site may be unstable)*  
+**Website**: [dynosol.io](https://www.dynosol.io) *(site need to be verified, DYOR)*  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/DpooSqZRL3qCmiq82YyB4zWmLfH3iEqx2gy8f2B6zjru)  
 **Twitter**: [@DynoSOL_](https://x.com/DynoSOL_) *(currently suspended)*  
 **Delegation Frequency**: Every epoch  
@@ -216,8 +216,7 @@ Participant list available at: https://www.aeropool.io/validators
 
 **APIs**:  
 Not available.  
-Participant list not available on site.  
-For contact, see [Discord message (direct)](https://discord.com/channels/428295358100013066/859540542608900127/1366367686099210271)
+Participant list not available on site.
 
 ---
 
@@ -252,7 +251,7 @@ Validator list viewable at: https://www.jagpool.xyz/pool
 
 ## 🐉 Definity Staked SOL
 
-**Website**: [definity.finance](https://www.definity.finance/validators)  
+**Website**: [definity.finance](https://www.definity.finance/validators) *(site need to be verified, DYOR)* 
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Bvbu55B991evqqhLtKcyTZjzQ4EQzRUwtf9T4CcpMmPL)  
 **Twitter**: [@realdefinity](https://x.com/realdefinity)  
 **Delegation Frequency**: Every epoch (likely)  

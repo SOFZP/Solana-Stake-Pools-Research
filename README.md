@@ -225,4 +225,67 @@ For contact, see [Discord message (direct)](https://discord.com/channels/4282953
 **APIs**:  
 Not available.  
 Validator list viewable at: https://www.jagpool.xyz/pool
+---
 
+## 10. ♾️ Definity Staked SOL
+
+**Website**: [definity.finance](https://www.definity.finance/validators)  
+**Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Bvbu55B991evqqhLtKcyTZjzQ4EQzRUwtf9T4CcpMmPL)  
+**Twitter**: [@realdefinity](https://x.com/realdefinity)  
+**Delegation Frequency**: Every epoch (likely)  
+**Recommended Commission**: 5% staking / 10% MEV  
+**Blacklist Policy**: Exclusion for malicious validator behavior  
+**Requirements**:
+- Validator located in Asia-Pacific (APAC) region
+- Goal: build geographic decentralization
+- Strategy: [staking strategy](https://www.definity.finance/staking-strategy)
+
+**APIs**:  
+Not available
+
+---
+
+## 11. 🔥 Firedancer Delegation Program
+
+**Website**: [delegation.firedancer.io](https://delegation.firedancer.io/delegation-program)  
+**Solana Compass Pool Page**: Not available  
+**Solscan Account**: [View Stake Accounts](https://solscan.io/account/8fxe1qGoDVLtqe9PAFyV4kR6zryTDyGQYb9AZQVUCvpM#stakeAccounts)  
+**Delegation Frequency**: Program starts in a few weeks; 3-month rotation cycle  
+**Recommended Commission**: 5% staking / 10% MEV  
+**Blacklist Policy**: Automatic exclusion upon SFDP removal  
+**Requirements**:
+- Must be an active SFDP validator
+- Minimum 50k SOL stake
+- Validator must run Firedancer client (or be ready to migrate)
+- Details: [intro article (June 9)](https://delegation.firedancer.io/blog/introducing-the-firedancer-delegation-program)
+
+**APIs**:  
+Not available  
+Current validator list: https://delegation.firedancer.io/validators
+
+---
+
+## 12. 🥩 Marinade (PSR Program)
+
+**Website**: [psr.marinade.finance](https://psr.marinade.finance)  
+**Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/marinade)  
+**Discord**: [Join](https://discord.gg/XM5Chpd7)  
+**Delegation Frequency**: Every epoch  
+**Recommended Commission**: Flexible; any value allowed  
+**Blacklist Policy**: None — delegation is algorithmic, no manual exclusions  
+**Special Note**:
+- Validators using Marinade are **not eligible for SFDP**
+- Involvement may lead to disqualification from other delegation programs
+
+**Requirements**:
+- Must place a bond and submit a bid
+- Technical guide: [Validator Bonds CLI](https://github.com/marinade-finance/validator-bonds/blob/main/packages/validator-bonds-cli/README.md)
+
+**APIs**:  
+```
+https://validators-api.marinade.finance/validators?epochs=10&limit=1000000  
+https://validators-api.marinade.finance/validators?epochs=0&limit=10&query_vote_accounts=$YOUR_VOTE_ACCOUNT  
+https://validators-api.marinade.finance/validators?limit=9999&query_vote_accounts=$YOUR_VOTE_ACCOUNT  
+https://validators-api.marinade.finance/rewards?epochs=10  
+https://validators-api.marinade.finance/reports/staking
+```

@@ -31,8 +31,9 @@ The document is intended for validator operators, contributors, and tooling deve
 ## 📘 Notes
 
 - **Recommended Commission** refers to the typical commission level expected by the pool to qualify for delegation.  
-  It is not always a hard requirement but rather reflects what is practically needed to receive stake.
-- All data was collected manually and cross-verified where possible. If a detail is out of date, contributions are welcome!
+  It is not always a hard requirement but reflects what is practically needed to receive stake.
+- All data was collected from **publicly available sources** including official documentation, stake pool dashboards, APIs, and Solana community forums.
+- This document is for **informational purposes only**. Interacting with any stake pool or program is your own responsibility and should be done after reviewing their official policies and terms.
 
 ---
 
@@ -340,5 +341,10 @@ This section will be populated with open-source Bash tools and API integrations 
 ## ⚠️ Disclaimer
 
 I am currently working on a unified script that automates validator eligibility checks across multiple Solana stake pools using official APIs and on-chain data.
+
+All data in this document is sourced from **open and public sources** as of June 2025.  
+While care has been taken to ensure accuracy, **I am not responsible for changes in delegation policies, pool criteria, or any decisions made by these third-party stake pools**.
+
+Use at your own discretion.
 
 Community feedback and contributions are welcome!

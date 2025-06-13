@@ -1,4 +1,4 @@
-# 🔥 Solana Stake Pool Research (12-June-2025)
+# 🔥 Solana Stake Pool Research (June-2025)
 
 This repository provides a structured and technical overview of major Solana stake pools as of June 2025.  
 The document is intended for validator operators, contributors, and tooling developers who want to understand delegation criteria, performance benchmarks, and integration points with each pool.
@@ -296,8 +296,8 @@ Validators who have submitted applications: https://delegation.firedancer.io/val
 **Delegation Frequency**: Every epoch  
 **Recommended Commission**: Flexible; any value allowed  
 **Blacklist Policy**: None — delegation is algorithmic, no manual exclusions  
-**Special Note**:
-- The use of Marinade by SFDP participants most often leads to **rejection from the SFDP program**.  
+❗️ **Important Note**:
+- The use of Marinade by SFDP participants most often leads to ⚠️ **rejection from the SFDP program**.  
 
 **Requirements**:
 - Must place a bond and submit a bid  

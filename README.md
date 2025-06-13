@@ -134,7 +134,7 @@ https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads
 **Discord**: [Join](https://discord.gg/wZNZ3BTG) · [Twitter](https://twitter.com/solblaze_org)  
 **Delegation Frequency**: Every epoch  
 **Recommended Commission**: 5% staking / 10% MEV  
-🔹 *Note: Validators with >50k SOL stake may qualify for 0%/0% delegation.*  
+🔹 *Note: Validators with >50k SOL stake may qualify only with 0% staking / 0% MEV*  
 **Blacklist Policy**: Unspecified  
 **Requirements**:
 - Highest estimated APY among candidates
@@ -212,7 +212,7 @@ For contact, see [Discord message (direct)](https://discord.com/channels/4282953
 - Long-term inactivity
 
 **Requirements**:
-- Operate from Latin America
+- Operate from Latin America (LATAM) region
 - Be active in the region for at least 10 epochs
 - Have SFDP inclusion or 40k+ SOL stake
 - Maintain online presence (website or Twitter)
@@ -290,3 +290,34 @@ https://validators-api.marinade.finance/validators?limit=9999&query_vote_account
 https://validators-api.marinade.finance/rewards?epochs=10  
 https://validators-api.marinade.finance/reports/staking
 ```
+
+---
+
+## 🔗 Further Reading & Resources
+
+- [🛡️ SFDP — Solana Foundation Delegation Program](https://solana.org/delegation-program)  
+- [📘 Solana Compass — Stake Pools Overview](https://solanacompass.com/stake-pools)  
+- [📈 Stakewiz — Validator Scoreboard](https://stakewiz.com)  
+- [📂 Validators.app Scoreboard](https://www.validators.app)  
+- [🔝 Topvalidators Leaderboard](https://topvalidators.app)
+- [🔍 Solana Validator Health Metrics](https://thevalidators.io)
+- [🔍 Solana Validator Graphana](https://metrics.stakeconomy.com)
+- [🥪 Solana Sandwich Finder Reports](https://github.com/FixedLocally/sandwich-finder/tree/master/reports)
+
+---
+
+## 🛠️ My Useful Scripts
+
+This section will be populated with open-source Bash tools and API integrations to assist validator operators in:
+
+- Checking all validator stakes
+- Checking eligibility for major stake pools (e.g., Jito, Marinade, JPool)
+- Fetching and visualizing validator scores from public APIs
+
+---
+
+## ⚠️ Disclaimer
+
+I am currently working on a unified script that automates validator eligibility checks across multiple Solana stake pools using official APIs and on-chain data.
+
+Community feedback and contributions are welcome!

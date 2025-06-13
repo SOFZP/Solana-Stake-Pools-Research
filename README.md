@@ -9,22 +9,22 @@ The document is intended for validator operators, contributors, and tooling deve
 
 ## 📚 Table of Contents
 
-[Notes](#-notes)
-[1. Jito Stake Pool](#-jito-stake-pool)
-[2. Shinobi Performance Pool](#-shinobi-performance-pool)
-[3. Edgevana Liquid Staking](#-edgevana-liquid-staking)
-[4. JPool Delegation Program](#-jpool-delegation-program)
-[5. Vault Stake Pool](#-vault-stake-pool)
-[6. Blazestake](#-blazestake)
-[7. AeroPool](#-aeropool)
-[8. DynoSOL](#-dynosol)
-[9. Jagpool](#-jagpool)
-[10. Definity Staked SOL](#-definity-staked-sol)
-[11. Firedancer Delegation Program](#-firedancer-delegation-program)
-[12. Marinade (PSR)](#-marinade-psr-program)
-[Further Reading & Resources](#-further-reading--resources)
-[My Useful Scripts](#-my-useful-scripts)
-[Disclaimer](#️-disclaimer)
+- [Notes](#-notes)
+  - [1. Jito Stake Pool](#-jito-stake-pool)
+  - [2. Shinobi Performance Pool](#-shinobi-performance-pool)
+  - [3. Edgevana Liquid Staking](#-edgevana-liquid-staking)
+  - [4. JPool Delegation Program](#-jpool-delegation-program)
+  - [5. Vault Stake Pool](#-vault-stake-pool)
+  - [6. Blazestake](#-blazestake)
+  - [7. AeroPool](#-aeropool)
+  - [8. DynoSOL](#-dynosol)
+  - [9. Jagpool](#-jagpool)
+  - [10. Definity Staked SOL](#-definity-staked-sol)
+  - [11. Firedancer Delegation Program](#-firedancer-delegation-program)
+  - [12. Marinade (PSR)](#-marinade-psr-program)
+- [Further Reading & Resources](#-further-reading--resources)
+- [My Useful Scripts](#-my-useful-scripts)
+- [Disclaimer](#️-disclaimer)
 
 ---
 
@@ -209,7 +209,7 @@ Participant list available at: https://www.aeropool.io/validators
 
 **Requirements**:
 - 100+ epochs of consistent activity
-- >99% uptime
+- 99%+ uptime
 - Validator program launched in epoch 797 (approx. 4 epochs ago)
 - Currently 27 validators with ~500k SOL delegated
 

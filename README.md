@@ -300,7 +300,7 @@ https://validators-api.marinade.finance/reports/staking
 - [📈 Stakewiz — Validator Scoreboard](https://stakewiz.com)  
 - [📂 Validators.app Scoreboard](https://www.validators.app)  
 - [🔝 Topvalidators Leaderboard](https://topvalidators.app)
-- [🔍 Solana Validator Health Metrics](https://thevalidators.io)
+- [🔍 Solana Validator Health Metrics](https://solana.thevalidators.io)
 - [🔍 Solana Validator Graphana](https://metrics.stakeconomy.com)
 - [🥪 Solana Sandwich Finder Reports](https://github.com/FixedLocally/sandwich-finder/tree/master/reports)
 

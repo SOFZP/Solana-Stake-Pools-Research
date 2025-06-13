@@ -9,22 +9,22 @@ The document is intended for validator operators, contributors, and tooling deve
 
 ## 📚 Table of Contents
 
-> [Notes](#-notes)
-> [1. Jito Stake Pool](#1-🧠-jito-stake-pool)
-> [2. Shinobi Performance Pool](#2-🥷-shinobi-performance-pool)
-> [3. Edgevana Liquid Staking](#3-edgevana-liquid-staking)
-> [4. JPool Delegation Program](#4-jpool-delegation-program)
-> [5. Vault Stake Pool](#5-vault-stake-pool)
-> [6. Blazestake](#6-blazestake)
-> [7. AeroPool](#7-aeropool)
-> [8. DynoSOL](#8-dynosol)
-> [9. Jagpool](#9-jagpool)
-> [10. Definity Staked SOL](#10-definity-staked-sol)
-> [11. Firedancer Delegation Program](#11-firedancer-delegation-program)
-> [12. Marinade (PSR)](#12-marinade-psr-program)
-> [Further Reading & Resources](#-further-reading--resources)
-> [My Useful Scripts](#-my-useful-scripts)
-> [Disclaimer](#️-disclaimer)
+[Notes](#-notes)
+[1. Jito Stake Pool](#-jito-stake-pool)
+[2. Shinobi Performance Pool](#-shinobi-performance-pool)
+[3. Edgevana Liquid Staking](#-edgevana-liquid-staking)
+[4. JPool Delegation Program](#-jpool-delegation-program)
+[5. Vault Stake Pool](#-vault-stake-pool)
+[6. Blazestake](#-blazestake)
+[7. AeroPool](#-aeropool)
+[8. DynoSOL](#-dynosol)
+[9. Jagpool](#-jagpool)
+[10. Definity Staked SOL](#-definity-staked-sol)
+[11. Firedancer Delegation Program](#-firedancer-delegation-program)
+[12. Marinade (PSR)](#-marinade-psr-program)
+[Further Reading & Resources](#-further-reading--resources)
+[My Useful Scripts](#-my-useful-scripts)
+[Disclaimer](#️-disclaimer)
 
 ---
 

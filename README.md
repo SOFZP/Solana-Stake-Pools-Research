@@ -225,6 +225,7 @@ For contact, see [Discord message (direct)](https://discord.com/channels/4282953
 **APIs**:  
 Not available.  
 Validator list viewable at: https://www.jagpool.xyz/pool
+
 ---
 
 ## 10. ♾️ Definity Staked SOL

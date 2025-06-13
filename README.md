@@ -19,11 +19,11 @@ The document is intended for validator operators, contributors, and tooling deve
   - [7. AeroPool](#-aeropool)
   - [8. DynoSOL](#-dynosol)
   - [9. Jagpool](#-jagpool)
-  - [10. Definity Staked SOL](#-definity-staked-sol)
+  - [10. Definity Staked SOL](#-♾️-definity-staked-sol)
   - [11. Firedancer Delegation Program](#-firedancer-delegation-program)
   - [12. Marinade (PSR)](#-marinade-psr-program)
 - [Further Reading & Resources](#-further-reading--resources)
-- [My Useful Scripts](#-my-useful-scripts)
+- [My Useful Scripts](#-🛠️-my-useful-scripts)
 - [Disclaimer](#️-disclaimer)
 
 ---

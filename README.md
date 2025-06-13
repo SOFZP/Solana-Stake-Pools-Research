@@ -153,3 +153,76 @@ https://stake.solblaze.org/api/v1/cls_boost?validator=...
 
 📧 To apply, send an email to `contact@solblaze.org` with the subject:  
 **“Request to Join BlazeStake Pool”**
+
+---
+
+## 7. 🪁 AeroPool
+
+**Website**: [aeropool.io](https://www.aeropool.io/apply)  
+**Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/aero2ePURjuEgLKTzcUmF6RypBncBGd7pMUYCoSsVJ6)  
+**Twitter**: [@AeroPool_](https://x.com/AeroPool_)  
+**Delegation Frequency**: Likely every epoch (unspecified)  
+**Recommended Commission**: 5% staking / 10% MEV  
+**Blacklist Policy**: Unspecified  
+**Requirements**:
+- Must be a Solana ecosystem contributor
+- Strategy outlined here: [delegation strategy](https://www.aeropool.io/delegationstrategy)
+
+**APIs**:  
+Not available.  
+Participant list available at: https://www.aeropool.io/validators
+
+---
+
+## 8. 🦕 DynoSOL
+
+**Website**: [dynosol.io](https://www.dynosol.io) *(site may be unstable)*  
+**Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/DpooSqZRL3qCmiq82YyB4zWmLfH3iEqx2gy8f2B6zjru)  
+**Twitter**: [@DynoSOL_](https://x.com/DynoSOL_) *(currently suspended)*  
+**Delegation Frequency**: Every epoch  
+**Recommended Commission**: 5% staking / 10% MEV  
+**Blacklist Policy**:
+- Excessive commission increases
+- Sandwiching or harmful MEV practices
+- Lack of validator activity
+
+**Requirements**:
+- 100+ epochs of consistent activity
+- >99% uptime
+- Validator program launched in epoch 797 (approx. 4 epochs ago)
+- Currently 27 validators with ~500k SOL delegated
+
+**APIs**:  
+Not available.  
+Participant list not available on site.  
+For contact, see [Discord message (direct)](https://discord.com/channels/428295358100013066/859540542608900127/1366367686099210271)
+
+---
+
+## 9. 🐈‍⬛ Jagpool
+
+**Website**: [jagpool.xyz](https://www.jagpool.xyz/pool)  
+**Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/jagEdDepWUgexiu4jxojcRWcVKKwFqgZBBuAoGu2BxM)  
+**Twitter**: [@JagPool_xyz](https://x.com/JagPool_xyz)  
+**Delegation Frequency**: Every 3 epochs  
+**Recommended Commission**: 5% staking / 10% MEV  
+**Blacklist Policy**:
+- Excessive commission hikes
+- Sandwiching or malicious MEV
+- Long-term inactivity
+
+**Requirements**:
+- Operate from Latin America
+- Be active in the region for at least 10 epochs
+- Have SFDP inclusion or 40k+ SOL stake
+- Maintain online presence (website or Twitter)
+- Full criteria:
+  - [Delegation Criteria](https://docs.jagpool.xyz/DELEGATION-STRATEGY/Delegation-Criteria)  
+  - [Performance Score](https://docs.jagpool.xyz/DELEGATION-STRATEGY/Performance-Score)  
+  - [Application Process](https://docs.jagpool.xyz/DELEGATION-STRATEGY/Validator-Application-Process)  
+  - [Community Goods](https://docs.jagpool.xyz/DELEGATION-STRATEGY/Community-Goods)
+
+**APIs**:  
+Not available.  
+Validator list viewable at: https://www.jagpool.xyz/pool
+

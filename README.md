@@ -33,7 +33,7 @@ The document is intended for validator operators, contributors, and tooling deve
 - **Recommended Commission** refers to the typical commission level expected by the pool to qualify for delegation.  
   It is not always a hard requirement but reflects what is practically needed to receive stake.
 - All data was collected from **publicly available sources** including official documentation, stake pool dashboards, APIs, and Solana community forums.
-- This document is for **informational purposes only**. Interacting with any stake pool or program is your own responsibility and should be done after reviewing their official policies and terms.
+- This document is for **informational purposes only**. Interacting with any stake pool or program is your own responsibility and should be done after reviewing their official policies and terms. Do your own research (DYOR).
 
 ---
 
@@ -46,9 +46,9 @@ The document is intended for validator operators, contributors, and tooling deve
 **Recommended Commission**: 0% staking / 10% MEV  
 **Blacklist Policy**: Subject to DAO vote  
 **Requirements**:
-- One-time 5k SOL self-stake
+- 5k SOL stake
 - Top credit score performance for 30 epochs
-- 0% staking commission
+- 0% staking / 10% MEV commissions
 
 **APIs**:  
 ```
@@ -68,7 +68,7 @@ https://kobe.mainnet.jito.network/api/v1/steward_events?limit=10000&event_type=S
 **Recommended Commission**: Unspecified  
 **Blacklist Policy**: Manual, maintained by founder (Zantetsu); includes SFDP exclusion but may be appealed directly  
 **Requirements**:
-- At least 10 epochs in top latency and CU performance
+- At least 10 epochs in top latency, CU and Consensus Voting performance
 - Consistent quality and non-malicious behavior
 
 **APIs**:  
@@ -100,25 +100,28 @@ https://api.stake.edgevana.com/api/v2/scores
 
 ## 📊 JPool Delegation Program
 
-**Website**: [svt.one](https://svt.one/)  
+**Website**: [svt.one](https://svt.one/), [jpool.one](https://app.jpool.one/validators)
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/CtMyWsrUtAwXWiGr9WjHT5fC3p3fgV8cyGpLTo2LJzG1)  
 **Discord**: [Join](https://discord.gg/HAqkz9gC)  
-**Delegation Frequency**: Every 5 epochs  
+**Delegation Frequency**: Every epoch, 5 epochs scoring cycle  
 **Recommended Commission**: 0% staking / 10% MEV (must not increase more than +3%)  
-**Blacklist Policy**: Undefined; possibly triggered by suspicious behavior  
-**Requirements**:
-- Top 500 APY over the last 10 epochs
-- JPool validator score among top 350
+**Blacklist Policy**: possibly triggered by suspicious behavior  
+**Requirements**:  
+- Top 500 APY over the last 10 epochs  
+- JPool validator score among top 350  
 - Active presence and community contribution  
-  (see [scoring system](https://docs.jpool.one/technical-details/smart-strategy/validator-scoring-system))
+- Detailed criteria in:  
+  - [Inclusion and removal criteria](https://docs.jpool.one/technical-details/smart-strategy/inclusion-and-removal-criteria)  
+  - [Validator scoring system](https://docs.jpool.one/technical-details/smart-strategy/validator-scoring-system)  
+  - [Extra stake for Community Good validators](https://docs.jpool.one/technical-details/smart-strategy/community-good)  
 
 **APIs**:  
 ```
-https://api.thevalidators.io/jpool-scores/$EPOCH_NUMBER/$THIS_SOLANA_VOTE_ACCOUNT  
-https://api.thevalidators.io/validators-history/history?network=mainnet&vote_id=$THIS_SOLANA_VOTE_ACCOUNT&epoch_count=1000&epoch_from=$LAST_EPOCH_NUMBER  
+https://api.thevalidators.io/jpool-scores/<EPOCH>/<VOTE_ACCOUNT>  
+https://api.thevalidators.io/validators-history/history?network=mainnet&vote_id=<VOTE_ACCOUNT>&epoch_count=1000&epoch_from=<EPOCH>  
 https://api.thevalidators.io/validators/list?network=mainnet&select=...  
-https://api.thevalidators.io/jpool-scores/800  
-Testnet History (optional):  
+https://api.thevalidators.io/jpool-scores/<EPOCH>  
+Testnet History:  
 https://api.thevalidators.io/validators-history/history?network=testnet&identity=<TESTNET_IDENTITY>&epoch_count=200
 ```
 
@@ -132,13 +135,13 @@ https://api.thevalidators.io/validators-history/history?network=testnet&identity
 **Delegation Frequency**: Every epoch; validators are queued and added in batches  
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**: Misbehavior such as sandwiching, ignoring governance (e.g., SIMD votes), or inactivity  
-**Requirements**:
-- Proven track record of contribution to the ecosystem
-- Apply via [SaaS program](https://docs.thevault.finance/validators/stake-as-a-service-saas)
-- Detailed criteria in:
+**Requirements**:  
+- Proven track record of contribution to the ecosystem  
+- Agree to the [SaaS program](https://docs.thevault.finance/validators/stake-as-a-service-saas)  
+- Detailed criteria in:  
   - [Application Process](https://docs.thevault.finance/validators/validator-application-process)  
-  - [Pool Strategy](https://docs.thevault.finance/validators/get-stake-from-the-pool)  
-  - [Kamino Strategy](https://docs.thevault.finance/validators/kamino-multiply-strategy)
+  - [General Delegation Criteria](https://docs.thevault.finance/validators/get-stake-from-the-pool)  
+- Additional feature: [Kamino Multiply Strategy](https://docs.thevault.finance/validators/kamino-multiply-strategy)  
 
 **APIs**:  
 ```

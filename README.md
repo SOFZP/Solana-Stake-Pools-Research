@@ -330,11 +330,48 @@ https://validators-api.marinade.finance/reports/staking
 
 ## 🛠 My Useful Scripts
 
-This section will be populated with open-source Bash tools and API integrations to assist validator operators in:
+A collection of custom tools created to support validator operations and stake pool analytics.
 
-- Checking all validator stakes
-- Checking eligibility for major stake pools (e.g., Jito, Marinade, JPool)
-- Fetching and visualizing validator scores from public APIs
+### ✅ Active Projects
+
+- 🔍 **[CVK — See Your Stake v3.0](https://github.com/SOFZP/CVK-See-Your-Stake-v3.0)**  
+  Display all stake accounts for your validator with aggregation by source, totals by status (active, activating, deactivating), and interactive sorting.
+
+- 🚨 **[Solana Delinquency Alert Bot](https://github.com/SOFZP/Solana-Delinquency-Alert-Bot)**  
+  Lightweight Bash bot that tracks validator delinquency and sends instant Telegram alerts. Configurable for any number of validators.
+
+---
+
+### 🧭 Planned & Upcoming
+
+- 🧮 **Stake Pool Eligibility Checker**  
+  Tool to evaluate validator eligibility for stake pools such as Jito, Edgevana, Vault, JPool etc — based on public APIs and validator score criteria.
+
+- 📊 **Validator Score Visualizer**  
+  Script to fetch and present validator performance metrics from Jito, JPool, Edgevana, Vault, and others in a normalized and visual format.
+
+- 🛠 **Further development of CVK — See Your Stake v3.0**  
+  Adding stake history, export options, and more pool identifier logic.
+
+---
+
+### 🌐 Web Interfaces (In Development)
+
+- 💻 **Web version of CVK — See Your Stake**  
+  Clean dashboard version of script output for public/validator use.
+
+- 💼 **Web-based Stake Pool Evaluator**  
+  Frontend for comparing validator eligibility and scoring across pools.
+
+---
+
+### 🗃 Archived Projects (Legacy)
+
+> These scripts are no longer maintained, but remain public for reference:
+
+- 🪞 [see-your-solana-node-stake](https://github.com/SOFZP/see-your-solana-node-stake)  
+- 🪞 [see-your-solana-node-stake-v-2](https://github.com/SOFZP/see-your-solana-node-stake-v-2)  
+- 🪞 [show-solana-node-info_v2](https://github.com/SOFZP/show-solana-node-info_v2)  
 
 ---
 

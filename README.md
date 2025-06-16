@@ -107,7 +107,7 @@ https://api.stake.edgevana.com/api/v2/scores
 **Discord**: [Join](https://discord.gg/HAqkz9gC)  
 **Delegation Frequency**: Every epoch, 5 epochs scoring cycle  
 **Recommended Commission**: 0% staking / 10% MEV (must not increase more than +3%)  
-**Blacklist Policy**: possibly triggered by suspicious behavior  
+**Blacklist Policy**: suspicious behavior (marked by validators.app)  
 **Requirements**:  
 - Top 500 APY over the last 10 epochs  
 - JPool validator score among top 350  
@@ -188,7 +188,7 @@ https://stake.solblaze.org/api/v1/cls_boost?validator=<VOTE_ACCOUNT>
 **Twitter**: [@AeroPool_](https://x.com/AeroPool_)  
 **Delegation Frequency**: Likely every epoch (unspecified)  
 **Recommended Commission**: 5% staking / 10% MEV  
-**Blacklist Policy**: Unspecified  
+**Blacklist Policy**: possibly triggered by suspicious behavior  
 **Requirements**:
 - Must be a Solana ecosystem contributor
 - Strategy outlined here: [delegation strategy](https://www.aeropool.io/delegationstrategy)

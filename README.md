@@ -319,8 +319,8 @@ https://validators-api.marinade.finance/reports/staking
 
 - [🛡️ SFDP — Solana Foundation Delegation Program](https://solana.org/delegation-program)  
 - [📘 Solana Compass — Stake Pools Overview](https://solanacompass.com/stake-pools)  
+- [📂 Validators.app Dashboard](https://www.validators.app)  
 - [📈 Stakewiz — Validator Scoreboard](https://stakewiz.com)  
-- [📂 Validators.app Scoreboard](https://www.validators.app)  
 - [🔝 Topvalidators Leaderboard](https://topvalidators.app)
 - [🔍 Solana Validator Health Metrics](https://solana.thevalidators.io)
 - [🔍 Solana Validator Graphana](https://metrics.stakeconomy.com)
@@ -385,3 +385,16 @@ While care has been taken to ensure accuracy, **I am not responsible for changes
 Use at your own discretion.
 
 Community feedback and contributions are welcome!
+
+---
+
+## 🧾 Usage & Attribution
+
+The information in this research is provided freely under an open model.  
+You are welcome to use, reference, or build upon this material in your own work, whether personal, educational, or professional.
+
+If you find this research helpful and are using it in a **comprehensive way** (e.g. integrating into documentation, validator tooling, or your product), a visible reference or active link back to this repository is kindly appreciated.
+
+> Let’s make validator knowledge transparent and accessible across Solana.
+
+

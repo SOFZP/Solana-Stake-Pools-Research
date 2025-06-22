@@ -274,7 +274,7 @@ Not available
 ## 🔥 Firedancer Delegation Program
 
 **Website**: [delegation.firedancer.io](https://delegation.firedancer.io/delegation-program)  
-**Solscan Account**: [View Stake Accounts](https://solscan.io/account/8fxe1qGoDVLtqe9PAFyV4kR6zryTDyGQYb9AZQVUCvpM#stakeAccounts)  
+**Solscan Account**: [View Stake Accounts 1](https://solscan.io/account/8fxe1qGoDVLtqe9PAFyV4kR6zryTDyGQYb9AZQVUCvpM#stakeAccounts) |  [View Stake Accounts 2](https://solscan.io/account/AjLzAtJHDVQ4c2WMnSXt94a5BNt4CorH63af2uEmgkyF#stakeAccounts)  
 **Delegation Frequency**: Program starts in a few weeks from June 2025; 3-month rotation cycle  
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**: Automatic exclusion upon SFDP removal  

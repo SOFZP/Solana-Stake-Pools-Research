@@ -204,7 +204,7 @@ Participant list available at: https://www.aeropool.io/validators
 **Website**: [dynosol.io](https://www.dynosol.io) *(need to be verified, DYOR)*  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/DpooSqZRL3qCmiq82YyB4zWmLfH3iEqx2gy8f2B6zjru)  
 **Twitter**: [@DynoSOL_](https://x.com/DynoSOL_) *(currently suspended)*  
-**Delegation Frequency**: Likely every epoch (unspecified)  
+**Delegation Frequency**: Likely every epoch  
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**:
 - Excessive commission increases
@@ -213,7 +213,8 @@ Participant list available at: https://www.aeropool.io/validators
 
 **Requirements**:
 - 100+ epochs of consistent activity  
-- 99%+ uptime  
+- 99%+ uptime
+- UPD: [docs & delegation strategy](https://docs.dynosol.io)  
 
 This new stakepool launched only in epoch 797  
 Currently 27 validators with ~500k SOL delegated  

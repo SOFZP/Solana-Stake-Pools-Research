@@ -186,7 +186,7 @@ https://stake.solblaze.org/api/v1/cls_boost?validator=<VOTE_ACCOUNT>
 **Website**: [aeropool.io](https://www.aeropool.io/apply)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/aero2ePURjuEgLKTzcUmF6RypBncBGd7pMUYCoSsVJ6)  
 **Twitter**: [@AeroPool_](https://x.com/AeroPool_)  
-**Delegation Frequency**: Likely every epoch (unspecified)  
+**Delegation Frequency**: Likely every epoch (unspecified), applications review on a weekly basis  
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**: possibly triggered by suspicious behavior  
 **Requirements**:

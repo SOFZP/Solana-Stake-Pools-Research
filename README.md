@@ -298,7 +298,7 @@ Validators who have submitted applications: https://delegation.firedancer.io/val
 **Discord**: [Join](https://discord.gg/XM5Chpd7)  
 **Delegation Frequency**: Every epoch  
 **Recommended Commission**: Flexible; any value allowed  
-**Blacklist Policy**: None — delegation is algorithmic, no manual exclusions  
+**Blacklist Policy**: Delegation is algorithmic, but DAO can exclude sandwitchers  
 
 **Requirements**:
 - Must place a bond and submit a bid  

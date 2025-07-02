@@ -238,7 +238,7 @@ Participant list not available on site.
 - Long-term online inactivity  
 
 **Requirements**:
-- Operate from Latin America (LATAM) region  
+- Operate from Latin America (LATAM) region, Singapore or South Africa
 - Be active in the region for at least 10 epochs  
 - Have SFDP inclusion or 40k+ SOL stake  
 - Maintain online presence (website or Twitter)  

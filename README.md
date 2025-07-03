@@ -292,8 +292,7 @@ Validators who have submitted applications: https://delegation.firedancer.io/val
 ---
 
 ## 🥩 Marinade (PSR Program)
-
-❗️ **Important Note**: The use of Marinade by SFDP participants most often leads to **rejection from the SFDP program** ❗️    
+ 
 **Website**: [psr.marinade.finance](https://psr.marinade.finance)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/marinade)  
 **Discord**: [Join](https://discord.gg/XM5Chpd7)  

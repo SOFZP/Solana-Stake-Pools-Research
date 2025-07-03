@@ -131,7 +131,7 @@ https://api.thevalidators.io/validators-history/history?network=testnet&identity
 
 ## 🔒 Vault Stake Pool
 
-**Website**: [thevault.finance](https://thevault.finance/dapp/validators)  
+**Website**: [thevault.finance](https://thevault.finance/)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Fu9BYC6tWBo1KMKaP3CFoKfRhqv9akmy3DuYwnCyWiyC)  
 **Discord**: [Join](https://discord.gg/aQC53CGgQY) · [Twitter](https://x.com/thevaultfinance)  
 **Delegation Frequency**: Every epoch; validators are queued and added in batches  

@@ -1,17 +1,30 @@
-![Solana Stake Pools Banner](solana-stake-pools-banner.png)  
+![Solana Stake Pools Banner](solana-stake-pools-banner.png)
 
 # 🔥 Solana Stake Pools Research (2025)
 
-This repository provides a structured and technical overview of major Solana stake pools as of June-July 2025.  
-The document is intended for validator operators, contributors, and tooling developers who want to understand delegation criteria, performance benchmarks, and integration points with each pool.
+This repository provides a structured and technical overview of major Solana stake pools as of July 2025. It also includes **live tools and a dashboard** to help validators check their eligibility and performance across these pools.
 
-> 🧪 Future updates will include eligibility-checking scripts using public APIs and validator performance scoring tools.
+The research is intended for validator operators, contributors, and tooling developers who want to understand delegation criteria, performance benchmarks, and integration points with each pool.
+
+---
+
+## 🚀 Live Tools & Dashboards
+
+These are the primary tools developed from this research, now available for public use.
+
+* ### 📊 **[Solana Stake Pools Dashboard](http://cryptovik.info/solana-stakepools-dashboard)**
+    The main result of this project. A comprehensive web interface for real-time monitoring and comparison of validator eligibility and performance scores across major Solana stake pools like Jito, Edgevana, Vault, JPool, and others.
+
+* ### ⚙️ **[Validator Eligibility Checker (CLI)](https://github.com/SOFZP/Solana-Stake-Pools-Checker)**
+    A command-line script to check a specific validator's eligibility for various stake pools. Ideal for automated checks and integrations, with support for JSON output.
 
 ---
 
 ## 📚 Table of Contents
 
-- [Notes](#-notes)
+- [Live Tools & Dashboards](#-live-tools--dashboards)
+- [Data & Resources](#️-data--resources)
+- [Notes on Stake Pools](#-notes-on-stake-pools)
   - [1. Jito Stake Pool](#-jito-stake-pool)
   - [2. Shinobi Performance Pool](#-shinobi-performance-pool)
   - [3. Edgevana Liquid Staking](#-edgevana-liquid-staking)
@@ -24,18 +37,30 @@ The document is intended for validator operators, contributors, and tooling deve
   - [10. Definity Staked SOL](#-definity-staked-sol)
   - [11. Firedancer Delegation Program](#-firedancer-delegation-program)
   - [12. Marinade (PSR)](#-marinade-psr-program)
+- [My Other Validator Scripts](#️-my-other-validator-scripts)
 - [Further Reading & Resources](#-further-reading--resources)
-- [My Useful Scripts](#-my-useful-scripts)
 - [Disclaimer](#️-disclaimer)
+- [Usage & Attribution](#-usage--attribution)
 
 ---
 
-## 📘 Notes
+## 🗃️ Data & Resources
 
-- **Recommended Commission** refers to the typical commission level expected by the pool to qualify for delegation.  
-  It is not always a hard requirement but reflects what is practically needed to receive stake.
-- All data was collected from **publicly available sources** including official documentation, stake pool dashboards, APIs, and Solana community forums.
-- This document is for **informational purposes only**. Interacting with any stake pool or program is your own responsibility and should be done after reviewing their official policies and terms. Do your own research (DYOR).
+This repository also serves as a source for curated stake pool data.
+
+* **[Stake Pools Configuration File](https://github.com/SOFZP/Solana-Stake-Pools-Research/blob/main/stakepools_list.conf)**
+    The master list of stake pools and their parameters used by the dashboard and CLI tool.
+
+* **[On-Chain Stake Data Archive](https://github.com/SOFZP/Solana-Stake-Pools-Research/tree/main/stakepool-data/mainnet-beta)**
+    A collection of historical on-chain data showing stake distribution across all validators in the <code>mainnet-beta</code> cluster. This data is regularly collected and updated.
+
+---
+
+## 📘 Notes on Stake Pools
+
+-   **Recommended Commission** refers to the typical commission level expected by the pool to qualify for delegation. It is not always a hard requirement but reflects what is practically needed to receive stake.
+-   All data was collected from **publicly available sources** including official documentation, stake pool dashboards, APIs, and Solana community forums.
+-   This document is for **informational purposes only**. Interacting with any stake pool or program is your own responsibility and should be done after reviewing their official policies and terms. Do your own research (DYOR).
 
 ---
 
@@ -44,7 +69,7 @@ The document is intended for validator operators, contributors, and tooling deve
 **Website**: [jito.network](https://www.jito.network/stakenet/steward/)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Jito4APyf642JPZPx3hGc6WWJ8zPKtRbRs4P815Awbb)  
 **Discord**: [Join](https://discord.gg/jCcXyerc)  
-**Delegation Frequency**: Every epoch ending in `x9`, typically during the last 5–8% of the epoch  
+**Delegation Frequency**: Every epoch ending in <code>x9</code>, typically during the last 5–8% of the epoch  
 **Recommended Commission**: 0% staking / 10% MEV  
 **Blacklist Policy**: Subject to DAO vote  
 **Requirements**:
@@ -133,7 +158,7 @@ https://api.thevalidators.io/validators-history/history?network=testnet&identity
 
 **Website**: [thevault.finance](https://thevault.finance/)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Fu9BYC6tWBo1KMKaP3CFoKfRhqv9akmy3DuYwnCyWiyC)  
-**Discord**: [Join](https://discord.gg/aQC53CGgQY) · [Twitter](https://x.com/thevaultfinance)  
+**Discord**: [Join](https://discord.gg/aQC53CGgQY) · **Twitter**: [x.com/thevaultfinance](https://x.com/thevaultfinance)  
 **Delegation Frequency**: Every epoch; validators are queued and added in batches  
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**: Misbehavior such as sandwiching, ignoring governance (e.g., SIMD votes), or inactivity  
@@ -158,16 +183,15 @@ https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads
 
 **Website**: [stake.solblaze.org](https://stake.solblaze.org/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/stk9ApL5HeVAwPLr3TLhDXdZS8ptVu7zp6ov8HFDuMi)  
-**Discord**: [Join](https://discord.gg/wZNZ3BTG) · [Twitter](https://twitter.com/solblaze_org)  
+**Discord**: [Join](https://discord.gg/wZNZ3BTG) · **Twitter**: [twitter.com/solblaze_org](https://twitter.com/solblaze_org)  
 **Delegation Frequency**: Every epoch  
-**Recommended Commission**: 5% staking / 10% MEV, *note: Validators with >50k SOL stake may qualify only with 0% staking / 0% MEV*  
-**Blacklist Policy**: Unspecified  
+**Recommended Commission**: 5% staking / 10% MEV, *note: Validators with >50k SOL stake may qualify only with 0% staking / 0% MEV* **Blacklist Policy**: Unspecified  
 **Requirements**:  
 - Highest estimated APY among candidates  
 - Technical and social presence encouraged  
 - Full criteria in [delegation docs](https://stake-docs.solblaze.org/protocol/delegation-strategy)  
 - Optional: direct staking integration on your site ([instructions](https://stake-docs.solblaze.org/developers/integrate))  
-Also, to apply you may send an email to `contact@solblaze.org` with the subject: **“Request to Join BlazeStake Pool”**  
+Also, to apply you may send an email to <code>contact@solblaze.org</code> with the subject: **“Request to Join BlazeStake Pool”**   
 
 **APIs**:  
 ```
@@ -201,9 +225,9 @@ Participant list available at: https://www.aeropool.io/validators
 
 ## 🦕 DynoSOL
 
-**Website**: [dynosol.io](https://www.dynosol.io) *(need to be verified, DYOR)*  
+**Website**: [dynosol.io](https://www.dynosol.io)   
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/DpooSqZRL3qCmiq82YyB4zWmLfH3iEqx2gy8f2B6zjru)  
-**Twitter**: [@DynoSOL_](https://x.com/DynoSOL_) *(currently suspended)*  
+**Twitter**: [@DynoSOL_](https://x.com/DynoSOL_) *(currently suspended)*    
 **Delegation Frequency**: Likely every epoch  
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**:
@@ -256,7 +280,7 @@ Validator list viewable at: https://www.jagpool.xyz/pool
 
 ## 🐉 Definity Staked SOL
 
-**Website**: [definity.finance](https://www.definity.finance/validators) *(need to be verified, DYOR)*  
+**Website**: [definity.finance](https://www.definity.finance/validators)   
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Bvbu55B991evqqhLtKcyTZjzQ4EQzRUwtf9T4CcpMmPL)  
 **Twitter**: [@realdefinity](https://x.com/realdefinity)  
 **Delegation Frequency**: Every epoch (likely)  
@@ -315,71 +339,44 @@ https://validators-api.marinade.finance/reports/staking
 
 ---
 
-## 🔗 Further Reading & Resources
+## 🛠️ My Other Validator Scripts
 
-- [🛡️ SFDP — Solana Foundation Delegation Program](https://solana.org/delegation-program)  
-- [📘 Solana Compass — Stake Pools Overview](https://solanacompass.com/stake-pools)  
-- [📂 Validators.app Dashboard](https://www.validators.app)  
-- [📈 Stakewiz — Validator Scoreboard](https://stakewiz.com)  
-- [🔝 Topvalidators Leaderboard](https://topvalidators.app)
-- [🔍 Solana Validator Health Metrics](https://solana.thevalidators.io)
-- [🔍 Solana Validator Graphana](https://metrics.stakeconomy.com)
-- [🥪 Solana Sandwich Finder Reports](https://github.com/FixedLocally/sandwich-finder/tree/master/reports)
-
----
-
-## 🛠 My Useful Scripts
-
-A collection of custom tools created to support validator operations and stake pool analytics.
+A collection of other custom tools created to support validator operations.
 
 ### ✅ Active Projects
 
-- 🔍 **[CVK — See Your Stake v3.0](https://github.com/SOFZP/CVK-See-Your-Stake-v3.0)**  
-  Display all stake accounts for your validator with aggregation by source, totals by status (active, activating, deactivating), and interactive sorting.
+-   🔍 **[CVK — See Your Stake v3.0](https://github.com/SOFZP/CVK-See-Your-Stake-v3.0)** Display all stake accounts for your validator with aggregation by source, totals by status (active, activating, deactivating), and interactive sorting.
 
-- 🚨 **[Solana Delinquency Alert Bot](https://github.com/SOFZP/Solana-Delinquency-Alert-Bot)**  
-  Lightweight Bash bot that tracks validator delinquency and sends instant Telegram alerts. Configurable for any number of validators.
+-   🚨 **[Solana Delinquency Alert Bot](https://github.com/SOFZP/Solana-Delinquency-Alert-Bot)** Lightweight Bash bot that tracks validator delinquency and sends instant Telegram alerts. Configurable for any number of validators.
 
----
-
-### 🧭 Planned & Upcoming
-
-- 🧮 **Stake Pool Eligibility Checker**  
-  Tool to evaluate validator eligibility for stake pools such as Jito, Edgevana, Vault, JPool etc — based on public APIs and validator score criteria.
-
-- 📊 **Validator Score Visualizer**  
-  Script to fetch and present validator performance metrics from Jito, JPool, Edgevana, Vault, and others in a normalized and visual format.
-
-- 🛠 **Further development of CVK — See Your Stake v3.0**  
-  Adding stake history, export options, and more pool identifier logic.
-
----
-
-### 🌐 Web Interfaces (In Development)
-
-- 💻 **Web version of CVK — See Your Stake**  
-  Clean dashboard version of script output for public/validator use.
-
-- 💼 **Web-based Stake Pool Evaluator**  
-  Frontend for comparing validator eligibility and scoring across pools.
-
----
-
-### 🗃 Archived Projects (Legacy)
+### 🗃️ Archived Projects (Legacy)
 
 > These scripts are no longer maintained, but remain public for reference:
 
-- 🪞 [see-your-solana-node-stake](https://github.com/SOFZP/see-your-solana-node-stake)  
-- 🪞 [see-your-solana-node-stake-v-2](https://github.com/SOFZP/see-your-solana-node-stake-v-2)  
-- 🪞 [show-solana-node-info_v2](https://github.com/SOFZP/show-solana-node-info_v2)  
+-   🪞 [see-your-solana-node-stake](https://github.com/SOFZP/see-your-solana-node-stake)
+-   🪞 [see-your-solana-node-stake-v-2](https://github.com/SOFZP/see-your-solana-node-stake-v-2)
+-   🪞 [show-solana-node-info_v2](https://github.com/SOFZP/show-solana-node-info_v2)
+
+---
+
+## 🔗 Further Reading & Resources
+
+-   [🛡️ SFDP — Solana Foundation Delegation Program](https://solana.org/delegation-program)
+-   [📘 Solana Compass — Stake Pools Overview](https://solanacompass.com/stake-pools)
+-   [📂 Validators.app Dashboard](https://www.validators.app)
+-   [📈 Stakewiz — Validator Scoreboard](https://stakewiz.com)
+-   [🔝 Topvalidators Leaderboard](https://topvalidators.app)
+-   [🔍 Solana Validator Health Metrics](https://solana.thevalidators.io)
+-   [🔍 Solana Validator Graphana](https://metrics.stakeconomy.com)
+-   [🥪 Solana Sandwich Finder Reports](https://github.com/FixedLocally/sandwich-finder/tree/master/reports)
 
 ---
 
 ## ⚠️ Disclaimer
 
-**I am currently working on a unified script that automates validator eligibility checks across multiple Solana stake pools using official APIs and on-chain data.**
+The tools and data provided in this repository automate validator eligibility checks across multiple Solana stake pools using official APIs and on-chain data.
 
-All data in this document is sourced from **open and public sources** as of June 2025.  
+All data in this document is sourced from **open and public sources** as of July 2025.  
 While care has been taken to ensure accuracy, **I am not responsible for changes in delegation policies, pool criteria, or any decisions made by these third-party stake pools**.
 
 Use at your own discretion.
@@ -396,5 +393,3 @@ You are welcome to use, reference, or build upon this material in your own work,
 If you find this research helpful and are using it in a **comprehensive way** (e.g. integrating into documentation, validator tooling, or your product), a visible reference or active link back to this repository is kindly appreciated.
 
 > Let’s make validator knowledge transparent and accessible across Solana.
-
-

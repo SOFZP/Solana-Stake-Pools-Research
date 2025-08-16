@@ -38,6 +38,7 @@ These are the primary tools developed from this research, now available for publ
   - [11. Firedancer Delegation Program](#-firedancer-delegation-program)
   - [12. DoubleZero Delegation Program](#-doublezero-delegation-program)
   - [13. Marinade (PSR)](#-marinade-psr-program)
+  - [14. SharkPool](#-sharkpool)
 - [My Other Validator Scripts](#️-my-other-validator-scripts)
 - [Further Reading & Resources](#-further-reading--resources)
 - [Disclaimer](#️-disclaimer)
@@ -360,6 +361,31 @@ https://validators-api.marinade.finance/validators?limit=9999&query_vote_account
 https://validators-api.marinade.finance/rewards?epochs=10  
 https://validators-api.marinade.finance/reports/staking
 ```
+
+---
+
+## 🦈 SharkPool
+
+**Website:** [sharklabs.sh](https://sharklabs.sh)  
+**Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/HQLwnQJFH7t9nBTP4vbdW4eHy62aecfDnj8te8VzqkFL)  
+**Focus:** stake allocation to validators run in partnership with U.S. universities to provide hands on blockchain education  
+**Access:** currently for U.S. universities
+
+**Program model**  
+SharkLabs funds and launches initial nodes, trains student teams, then transitions day to day operations to campus groups
+
+**Scale**  
+Launched with about 20 schools including Princeton and UPenn, with more expected to join
+
+**Requirements**  
+Priority for active campus teams showing reliable uptime and operations, with a reported no commission policy on university run validators
+
+**Useful links**  
+- Program announcement thread — https://x.com/ghostofharvard/status/1940054139192721618  
+- Coverage: [Blockworks feature on SharkLabs’ university validator program](https://blockworks.co/news/solana-teen-brooklyn-manannikov)  
+
+**Notes**  
+Blacklist policy, other details and delegation criteria are not fully standardized in public docs at time of writing
 
 ---
 

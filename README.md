@@ -36,7 +36,8 @@ These are the primary tools developed from this research, now available for publ
   - [9. Jagpool](#-jagpool)
   - [10. Definity Staked SOL](#-definity-staked-sol)
   - [11. Firedancer Delegation Program](#-firedancer-delegation-program)
-  - [12. Marinade (PSR)](#-marinade-psr-program)
+  - [12. DoubleZero Delegation Program](#-doublezero-delegation-program)
+  - [13. Marinade (PSR)](#-marinade-psr-program)
 - [My Other Validator Scripts](#️-my-other-validator-scripts)
 - [Further Reading & Resources](#-further-reading--resources)
 - [Disclaimer](#️-disclaimer)
@@ -312,6 +313,29 @@ Not available
 **APIs**:  
 Not available  
 Validators who have submitted applications: https://delegation.firedancer.io/validators
+
+---
+
+## 🌐 DoubleZero Delegation Program
+
+**Website:** [doublezero.xyz](https://doublezero.xyz)  
+**Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/3fV1sdGeXaNEZj6EPDTpub82pYxcRXwt2oie6jkSzeWi)  
+**Initial Pool Size:** 3,000,000 SOL announced on July 30, 2025  
+**Focus:** expand validator performance and decentralization by incentivizing operators on DoubleZero's low latency fiber network and in underserved geographies
+
+**Delegation cadence**  
+Phased rollout: first phase targets validators that connected to the DoubleZero network during testnet, with broader decentralization planned ahead of mainnet beta later in 2025
+
+**Validator centric requirements and signals**  
+Connectivity to the DoubleZero network and sustained low latency performance are key signals in the first phase, with emphasis on geographic diversity and network quality rather than fixed public commission thresholds
+
+**Useful links**  
+- Journal announcement: [*DoubleZero Establishes 3M SOL dzSOL Stake Pool*](https://doublezero.xyz/journal/doublezero-establishes-3m-sol-dzsol-stake-pool-to-expand-high-performance-fiber-network)  
+- [Delegation program guide / thread (DZDP)](https://doublezero.xyz/journal/guide-to-the-doublezero-delegation-pool-dzdp)  
+- Independent coverage: [CoinDesk summary](https://www.coindesk.com/business/2025/07/30/doublezero-launches-3m-sol-stake-pool-to-turbocharge-solana-validator-network)   
+
+**Notes**  
+Details like blacklist policy, explicit fee schedule, and long term allocation formulas are not fully standardized in public docs at time of writing, follow the journal and official X posts for updates
 
 ---
 

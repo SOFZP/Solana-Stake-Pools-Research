@@ -303,18 +303,25 @@ Not available
 
 **Website**: [delegation.firedancer.io](https://delegation.firedancer.io/delegation-program)  
 **Solscan Account**: [View Stake Accounts 1](https://solscan.io/account/8fxe1qGoDVLtqe9PAFyV4kR6zryTDyGQYb9AZQVUCvpM#stakeAccounts) |  [View Stake Accounts 2](https://solscan.io/account/AjLzAtJHDVQ4c2WMnSXt94a5BNt4CorH63af2uEmgkyF#stakeAccounts)  
-**Delegation Frequency**: Program starts in a few weeks from June 2025; 3-month rotation cycle  
+
+⚠️ **Status (Sep 20, 2025):** The program is **winding down**. Delegations will start to be withdrawn **in October 2025**, **in the order they were originally granted**. Recently granted delegations are expected to remain for **~3 months** from their assignment. The team may re-introduce targeted delegation windows in the future for major features or high-risk transitions. ([Official blog update](https://delegation.firedancer.io/blog/winding-down-delegation-program))
+
+**Delegation Frequency**: _Winding down — withdrawals per the schedule above (no ongoing rotation cycle)._
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**: Automatic exclusion upon SFDP removal  
-**Requirements**:
-- Must be an active SFDP validator
-- Minimum 50k SOL stake
-- Validator must run Firedancer client on mainnet
-- Details: [intro article (June 9)](https://delegation.firedancer.io/blog/introducing-the-firedancer-delegation-program)
+**Historical requirements (June 2025):**
+- Must be an active SFDP validator  
+- Minimum 50k SOL stake  
+- Validator must run Firedancer client on mainnet  
+- Details: [intro article (June 9)](https://delegation.firedancer.io/blog/introducing-the-firedancer-delegation-program)  
 
 **APIs**:  
 Not available  
 Validators who have submitted applications: https://delegation.firedancer.io/validators
+
+**References**
+- Winding down announcement (Sep 20, 2025): https://delegation.firedancer.io/blog/winding-down-delegation-program  
+- Introducing the program (Jun 9, 2025): https://delegation.firedancer.io/blog/introducing-the-firedancer-delegation-program
 
 ---
 

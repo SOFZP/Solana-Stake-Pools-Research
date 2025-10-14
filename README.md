@@ -397,6 +397,8 @@ Blacklist policy, other details and delegation criteria are not fully standardiz
 **Discord**: [Join](https://starpool.global/)  
 **X/Twitter**: [Follow](https://starpool.global/)  
 
+**Focus:** advance Solana’s decentralization by delegating stake to underrepresented validators across Africa, Latin America, Asia, Canada, and beyond  
+
 **Delegation Frequency**: rebalanced every two weeks (following the next Wednesday epoch).  
 **Recommended Commission**: validator commission ≤ 5% over the last 90 days; Jito MEV required.  
 **Blacklist Policy**: must not be on Solana Foundation blacklist; service restricted in OFAC/EU-sanctioned jurisdictions.  

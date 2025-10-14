@@ -39,6 +39,7 @@ These are the primary tools developed from this research, now available for publ
   - [12. DoubleZero Delegation Program](#-doublezero-delegation-program)
   - [13. Marinade (PSR)](#-marinade-psr-program)
   - [14. SharkPool](#-sharkpool)
+  - [15. StarPool](#-starpool)
 - [My Other Validator Scripts](#️-my-other-validator-scripts)
 - [Further Reading & Resources](#-further-reading--resources)
 - [Disclaimer](#️-disclaimer)
@@ -54,7 +55,7 @@ This repository also serves as a source for curated stake pool data.
     The master list of stake pools and their parameters used by the dashboard and CLI tool.
 
 * **[On-Chain Stake Data Archive](https://github.com/SOFZP/Solana-Stake-Pools-Research/tree/main/stakepool-data/mainnet-beta)**
-    A collection of historical on-chain data showing stake distribution across all validators in the <code>mainnet-beta</code> cluster. This data is regularly collected and updated.
+    A collection of historical on-chain data showing stake distribution across all validators in the ```mainnet-beta``` cluster. This data is regularly collected and updated.
 
 ---
 
@@ -71,7 +72,7 @@ This repository also serves as a source for curated stake pool data.
 **Website**: [jito.network](https://www.jito.network/stakenet/steward/)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Jito4APyf642JPZPx3hGc6WWJ8zPKtRbRs4P815Awbb)  
 **Discord**: [Join](https://discord.gg/jCcXyerc)  
-**Delegation Frequency**: Every epoch ending in <code>x9</code>, typically during the last 5–8% of the epoch  
+**Delegation Frequency**: Every epoch ending in ```x9```, typically during the last 5–8% of the epoch  
 **Recommended Commission**: 0% staking / 10% MEV  
 **Blacklist Policy**: Subject to DAO vote  
 **Requirements**:
@@ -193,7 +194,7 @@ https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads
 - Technical and social presence encouraged  
 - Full criteria in [delegation docs](https://stake-docs.solblaze.org/protocol/delegation-strategy)  
 - Optional: direct staking integration on your site ([instructions](https://stake-docs.solblaze.org/developers/integrate))  
-Also, to apply you may send an email to <code>contact@solblaze.org</code> with the subject: **“Request to Join BlazeStake Pool”**   
+Also, to apply you may send an email to ```contact@solblaze.org``` with the subject: **“Request to Join BlazeStake Pool”**   
 
 **APIs**:  
 ```
@@ -386,6 +387,34 @@ Priority for active campus teams showing reliable uptime and operations, with a 
 
 **Notes**  
 Blacklist policy, other details and delegation criteria are not fully standardized in public docs at time of writing
+
+---
+
+## ✨ StarPool
+
+**Website**: [starpool.global](https://starpool.global)  
+**Docs**: [starpool.global/docs](https://starpool.global/docs/)  
+**Discord**: [Join](https://starpool.global/)  
+**X/Twitter**: [Follow](https://starpool.global/)  
+
+**Delegation Frequency**: rebalanced every two weeks (following the next Wednesday epoch).  
+**Recommended Commission**: validator commission ≤ 5% over the last 90 days; Jito MEV required.  
+**Blacklist Policy**: must not be on Solana Foundation blacklist; service restricted in OFAC/EU-sanctioned jurisdictions.  
+
+**Requirements:**
+- Outside OFAC-sanctioned countries  
+- Validator commission ≤ 5% (rolling 90d)  
+- Operates Jito MEV  
+- Total stake in the ~50k–250k SOL range  
+- Preferably in **low stake-concentration regions**  
+- Not blacklisted by the Solana Foundation
+
+**Notes:** early-stage, small pool at the beginning of growth.  
+
+**Useful links**  
+- App: https://starpool.global/app   
+- Docs: https://starpool.global/docs   
+- Strategy: https://starpool.global/docs/strategy.html   
 
 ---
 

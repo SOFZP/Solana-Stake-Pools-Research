@@ -186,7 +186,8 @@ https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads
 
 **Website**: [stake.solblaze.org](https://stake.solblaze.org/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/stk9ApL5HeVAwPLr3TLhDXdZS8ptVu7zp6ov8HFDuMi)  
-**Discord**: [Join](https://discord.gg/wZNZ3BTG) · **Twitter**: [twitter.com/solblaze_org](https://twitter.com/solblaze_org)  
+**Discord**: [Join](https://discord.gg/wZNZ3BTG)
+**Twitter**: [twitter.com/solblaze_org](https://twitter.com/solblaze_org)  
 **Delegation Frequency**: Every epoch  
 **Recommended Commission**: 5% staking / 10% MEV, *note: Validators with >50k SOL stake may qualify only with 0% staking / 0% MEV* **Blacklist Policy**: Unspecified  
 **Requirements**:  
@@ -329,22 +330,29 @@ Validators who have submitted applications: https://delegation.firedancer.io/val
 
 **Website:** [doublezero.xyz](https://doublezero.xyz)  
 **Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/3fV1sdGeXaNEZj6EPDTpub82pYxcRXwt2oie6jkSzeWi)  
-**Initial Pool Size:** 3,000,000 SOL announced on July 30, 2025  
-**Focus:** expand validator performance and decentralization by incentivizing operators on DoubleZero's low latency fiber network and in underserved geographies
+**Dashboard**: [dzSOL Staking](https://doublezero.xyz/staking)  
+**Docs (Fees)**: [Paying Fees](https://docs.malbeclabs.com/paying-fees/)  
+**Discord**: [Join](https://discord.com/invite/doublezerotech)   
+**Twitter**: https://x.com/doublezero   
+
+**Status (Oct 2025):** DoubleZero is live on **mainnet-beta** ([launched Oct 2, 2025](https://doublezero.xyz/journal/doublezero-launches-mainnet-beta-a-high-performance-global-network-for-distributed-systems-underpinned-by-2z-token)) and continues delegating stake to validators connected to the network. The **Delegation Program (DZDP)** is expanding rapidly: the stake pool grew from [**3M SOL** at launch](https://doublezero.xyz/journal/doublezero-establishes-3m-sol-dzsol-stake-pool-to-expand-high-performance-fiber-network) to **~13M SOL** ([an additional **+10M SOL**](https://doublezero.xyz/journal/doublezero-stake-pool-grows-10m-sol-expanding-total-to-13m-sol)) as part of the mainnet rollout.  
+
+**Network Access Fee:** A flat **5%** fee on **block rewards** and **priority fees**, beginning **epoch 859** (starts **Sat, Oct 4, 2025**). This is an infrastructure fee for using DoubleZero’s private fiber network and is **separate from any public validator commission**.  
 
 **Delegation cadence**  
-Phased rollout: first phase targets validators that connected to the DoubleZero network during testnet, with broader decentralization planned ahead of mainnet beta later in 2025
+DZDP prioritizes validators that are connected to **DoubleZero mainnet-beta**; allocations expand in waves as the pool scales  
 
-**Validator centric requirements and signals**  
-Connectivity to the DoubleZero network and sustained low latency performance are key signals in the first phase, with emphasis on geographic diversity and network quality rather than fixed public commission thresholds
+**Validator requirements**:
+- Stable connectivity to **DoubleZero** (low latency, reliable link)  
+- No explicit cap on public validator commission (network fee applies regardless)  
 
 **Useful links**  
-- Journal announcement: [*DoubleZero Establishes 3M SOL dzSOL Stake Pool*](https://doublezero.xyz/journal/doublezero-establishes-3m-sol-dzsol-stake-pool-to-expand-high-performance-fiber-network)  
+- Stake pool launch (3M SOL): https://doublezero.xyz/journal/doublezero-establishes-3m-sol-dzsol-stake-pool-to-expand-high-performance-fiber-network
+- Stake pool grows +10M → ~13M SOL: https://doublezero.xyz/journal/doublezero-stake-pool-grows-10m-sol-expanding-total-to-13m-sol
 - [Delegation program guide / thread (DZDP)](https://doublezero.xyz/journal/guide-to-the-doublezero-delegation-pool-dzdp)  
 - Independent coverage: [CoinDesk summary](https://www.coindesk.com/business/2025/07/30/doublezero-launches-3m-sol-stake-pool-to-turbocharge-solana-validator-network)   
 
-**Notes**  
-Details like blacklist policy, explicit fee schedule, and long term allocation formulas are not fully standardized in public docs at time of writing, follow the journal and official X posts for updates
+Notes: The **5% network fee** is paid for DoubleZero infrastructure (private/dark fiber, DC gear) and is **not** a validator commission change.  
 
 ---
 

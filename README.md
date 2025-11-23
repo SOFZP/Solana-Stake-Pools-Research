@@ -231,7 +231,7 @@ Participant list available at: https://www.aeropool.io/validators
 
 **Website**: [dynosol.io](https://www.dynosol.io)   
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/DpooSqZRL3qCmiq82YyB4zWmLfH3iEqx2gy8f2B6zjru)  
-**Twitter**: [@DynoSOL_](https://x.com/DynoSOL_) *(currently suspended)*    
+**Twitter**: [@DynoSOL_](https://x.com/DynoSOLPool)  
 **Delegation Frequency**: Likely every epoch  
 **Recommended Commission**: 5% staking / 10% MEV  
 **Blacklist Policy**:

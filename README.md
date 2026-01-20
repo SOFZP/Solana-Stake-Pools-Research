@@ -38,8 +38,9 @@ These are the primary tools developed from this research, now available for publ
   - [11. Firedancer Delegation Program](#-firedancer-delegation-program)
   - [12. DoubleZero Delegation Program](#-doublezero-delegation-program)
   - [13. Marinade (PSR)](#-marinade-psr-program)
-  - [14. SharkPool](#-sharkpool)
-  - [15. StarPool](#-starpool)
+  - [14. SOL Strategies](#-solstrategies)
+  - [15. SharkPool](#-sharkpool)
+  - [16. StarPool](#-starpool)
 - [My Other Validator Scripts](#️-my-other-validator-scripts)
 - [Further Reading & Resources](#-further-reading--resources)
 - [Disclaimer](#️-disclaimer)
@@ -376,6 +377,31 @@ https://validators-api.marinade.finance/validators?epochs=0&limit=10&query_vote_
 https://validators-api.marinade.finance/validators?limit=9999&query_vote_accounts=<VOTE_ACCOUNT>  
 https://validators-api.marinade.finance/rewards?epochs=10  
 https://validators-api.marinade.finance/reports/staking
+```
+
+---
+
+## 🟣 SOL Strategies
+
+**Website:** [solstrategies.io](https://solstrategies.io)
+**Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/StKeDUdSu7jMSnPJ1MPqDnk3RdEwD2QbJaisHMebGhw)
+**Blog Announcement:** [Everything is liquid: SOL Strategies' new liquid staking solution - STKESOL](https://solstrategies.io/blog/everything-is-liquid-sol-strategies-new-liquid-staking-solution-stkesol)
+**Delegation Frequency:** Not specified (algorithmic delegation using Stakewiz Wiz Score with a 30-day mean)
+**Recommended Commission:** Unspecified (selection is based on a network-health focused score, not solely APY or commission)
+**Blacklist Policy:** Not specified
+
+**Requirements:**
+
+- No application, no KYC, no token purchase required. Inclusion is algorithmic.
+- Delegation is based on the [Stakewiz Wiz Score](https://stakewiz.com/), using a 30-day mean to smooth temporary peaks and troughs.
+- The score [blends multiple factors](https://stakewiz.com/faq#faq-wizscore) (performance, decentralization signals, published validator info, being up to date, avoiding high-concentration locations, etc.).
+- Initial target is ~40-60 validators with equal delegation, with potential changes over time (validator set size and/or score-aligned weights).
+
+**APIs:**
+```
+https://api.stakewiz.com/validators  
+https://api.stakewiz.com/validator/<VOTE_ACCOUNT>  
+https://api.stakewiz.com/wiz_score
 ```
 
 ---

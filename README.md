@@ -383,21 +383,21 @@ https://validators-api.marinade.finance/reports/staking
 
 ## 🟣 SOL Strategies (STKESOL)
 
-**Website:** [solstrategies.io](https://solstrategies.io)
-**Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/StKeDUdSu7jMSnPJ1MPqDnk3RdEwD2QbJaisHMebGhw)
-**Blog Announcement:** [Everything is liquid: SOL Strategies' new liquid staking solution - STKESOL](https://solstrategies.io/blog/everything-is-liquid-sol-strategies-new-liquid-staking-solution-stkesol)
-**Delegation Frequency:** Not specified (algorithmic delegation using Stakewiz Wiz Score with a 30-day mean)
-**Recommended Commission:** Unspecified (selection is based on a network-health focused score, not solely APY or commission)
-**Blacklist Policy:** Not specified
+**Website:** [solstrategies.io](https://solstrategies.io)  
+**Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/StKeDUdSu7jMSnPJ1MPqDnk3RdEwD2QbJaisHMebGhw)  
+**Blog Announcement:** [Everything is liquid: SOL Strategies' new liquid staking solution - STKESOL](https://solstrategies.io/blog/everything-is-liquid-sol-strategies-new-liquid-staking-solution-stkesol)  
+**Delegation Frequency:** Not specified (algorithmic delegation using Stakewiz Wiz Score with a 30-day mean)  
+**Recommended Commission:** Unspecified (selection is based on a network-health focused score, not solely APY or commission)  
+**Blacklist Policy:** Not specified  
 
-**Requirements:**
+**Requirements:**  
 
-- No application, no KYC, no token purchase required. Inclusion is algorithmic.
-- Delegation is based on the [Stakewiz Wiz Score](https://stakewiz.com/), using a 30-day mean to smooth temporary peaks and troughs.
-- The score [blends multiple factors](https://stakewiz.com/faq#faq-wizscore) (performance, decentralization signals, published validator info, being up to date, avoiding high-concentration locations, etc.).
-- Initial target is ~40-60 validators with equal delegation, with potential changes over time (validator set size and/or score-aligned weights).
+- No application, no KYC, no token purchase required. Inclusion is algorithmic.  
+- Delegation is based on the [Stakewiz Wiz Score](https://stakewiz.com/), using a 30-day mean to smooth temporary peaks and troughs.  
+- The score [blends multiple factors](https://stakewiz.com/faq#faq-wizscore) (performance, decentralization signals, published validator info, being up to date, avoiding high-concentration locations, etc.).  
+- Initial target is ~40-60 validators with equal delegation, with potential changes over time (validator set size and/or score-aligned weights).  
 
-**APIs:**
+**APIs:**  
 ```
 https://api.stakewiz.com/validators  
 https://api.stakewiz.com/validator/<VOTE_ACCOUNT>  

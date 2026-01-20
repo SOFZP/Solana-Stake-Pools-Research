@@ -38,7 +38,7 @@ These are the primary tools developed from this research, now available for publ
   - [11. Firedancer Delegation Program](#-firedancer-delegation-program)
   - [12. DoubleZero Delegation Program](#-doublezero-delegation-program)
   - [13. Marinade (PSR)](#-marinade-psr-program)
-  - [14. SOL Strategies](#-solstrategies)
+  - [14. SOL Strategies (STKESOL)](#-sol-strategies-stkesol)
   - [15. SharkPool](#-sharkpool)
   - [16. StarPool](#-starpool)
 - [My Other Validator Scripts](#️-my-other-validator-scripts)
@@ -381,7 +381,7 @@ https://validators-api.marinade.finance/reports/staking
 
 ---
 
-## 🟣 SOL Strategies
+## 🟣 SOL Strategies (STKESOL)
 
 **Website:** [solstrategies.io](https://solstrategies.io)
 **Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/StKeDUdSu7jMSnPJ1MPqDnk3RdEwD2QbJaisHMebGhw)

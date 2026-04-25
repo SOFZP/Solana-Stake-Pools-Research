@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "cluster": "mainnet-beta",
-  "generated_at": "2026-04-25T10:51:00Z",
+  "generated_at": "2026-04-25T17:28:27Z",
   "last_aggregated_epoch": 961,
   "epochs_count": 142,
   "name_remap": {},
@@ -78416,7 +78416,7 @@
       "epoch": 961,
       "snapshot_timestamp_utc": "2026-04-25T07:30:20+00:00",
       "epoch_completed_percent": 85.01412037037038,
-      "snapshot_source_url": "https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/mainnet-beta/961/mainnet-beta-analysis-20260425-125945.json",
+      "snapshot_source_url": "https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/mainnet-beta/961/mainnet-beta-analysis-20260425-172549.json",
       "totals": {
         "active_lamports": 424619092780455300,
         "validator_count": 774

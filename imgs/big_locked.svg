@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Unlocked stake / data question icon - dark theme</title>
+  <desc id="desc">Transparent SVG icon showing an unlocked padlock, a database stack, and a question mark.</desc>
+  <g fill="#F8FAFC">
+    <!-- Unlocked shackle -->
+    <path d="M252 416V317c0-91 78-166 177-166s177 75 177 166v87h-76v-87c0-53-45-96-101-96s-101 43-101 96v99z"/>
+
+    <!-- Lock body -->
+    <path d="M238 417h354c41 0 74 33 74 74v35c0 7-5 13-12 14l-72 10c-35 5-60 35-60 70v188c0 9-7 16-16 16H238c-41 0-74-33-74-74V491c0-41 33-74 74-74z"/>
+
+    <!-- Keyhole cutout -->
+    <path fill="#1F2933" d="M430 505c-32 0-58 26-58 58 0 22 13 42 31 51l-14 87c-2 8 5 16 13 16h56c8 0 15-8 13-16l-14-87c18-10 31-29 31-51 0-32-26-58-58-58z"/>
+
+    <!-- Database stack -->
+    <path d="M548 616c0-34 69-61 154-61s154 27 154 61-69 61-154 61-154-27-154-61z"/>
+    <path d="M548 657c30 28 92 42 154 42s124-14 154-42v55c0 34-69 61-154 61s-154-27-154-61z"/>
+    <path d="M548 746c30 28 92 42 154 42s124-14 154-42v55c0 34-69 61-154 61s-154-27-154-61z"/>
+
+    <!-- Question mark -->
+    <path d="M766 492c-19 0-35-15-35-34 0-48 26-77 62-104 23-17 35-31 35-54 0-25-19-43-47-43-30 0-49 18-52 48-2 18-17 31-35 31h-18c-20 0-36-17-34-38 7-78 63-129 141-129 78 0 132 51 132 124 0 53-28 84-67 112-28 21-41 37-42 56-1 18-16 31-34 31z"/>
+    <circle cx="770" cy="557" r="39"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <style>
+      .mark { fill: #FFFFFF; }
+    </style>
+  </defs>
+  <path class="mark" fill-rule="evenodd" d="M 255 59 L 85 157 L 85 354 L 256 452 L 426 353 L 426 157 Z M 254 78 L 410 167 L 410 344 L 257 433 L 101 344 L 101 167 Z"/>
+  <polygon class="mark" points="177,209 334,211 319,147 192,147"/>
+  <polygon class="mark" points="215,222 229,257 225,298 287,298 283,257 296,222"/>
+  <polygon class="mark" points="175,235 134,267 190,365 216,367 242,342 242,329 213,301 213,258"/>
+  <polygon class="mark" points="337,235 299,258 299,301 270,329 270,342 297,367 320,367 378,266"/>
+</svg>

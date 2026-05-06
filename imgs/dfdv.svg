@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547.69 200" fill="none">
+  <defs>
+    <linearGradient id="logoGradient" x1="121.6" y1="320.9" x2="426.11" y2="16.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f18f34"/>
+      <stop offset="1" stop-color="#ff4431"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#logoGradient)" d="M410.25,110.94V.54H137.47v110.4C86.5,129.98,39.74,159.82,0,199.3h44.22c28.31-23.66,59.71-42.58,93.25-56.35v56.21h29.82v-66.91c34.06-10.55,69.89-16.01,106.57-16.01s72.51,5.47,106.57,16.02v66.9h29.82v-56.19c33.52,13.77,64.93,32.67,93.23,56.33h44.22c-39.74-39.48-86.49-69.32-137.45-88.36ZM380.43,101.14c-34.22-9.71-70.01-14.71-106.57-14.71s-72.35,5-106.57,14.71V30.34h213.14v70.8Z"/>
+</svg>

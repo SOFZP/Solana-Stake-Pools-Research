@@ -1,13 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1040" viewBox="0 0 760 1040" fill="none">
-  <title>Red icon with padding</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="1120" viewBox="-40 -40 840 1120" fill="none">
+  <title>Red icon with increased padding</title>
   <g fill="#E33E3F">
-    <!-- Top cap -->
     <path d="M222 55C272 33 332 22 380 22C428 22 488 33 538 55C562 66 575 82 575 100C575 111 566 120 555 120C467 110 293 110 205 120C194 120 185 111 185 100C185 82 198 66 222 55Z"/>
-
-    <!-- Main domed body -->
     <path fill-rule="evenodd" d="M60 705C27 705 0 678 0 645V457C0 280 136 179 380 179C624 179 760 280 760 457V645C760 678 733 705 700 705H60ZM495 390C495 326.487 443.513 275 380 275C316.487 275 265 326.487 265 390C265 453.513 316.487 505 380 505C443.513 505 495 453.513 495 390Z" clip-rule="evenodd"/>
-
-    <!-- Bottom bar -->
     <rect x="0" y="784" width="760" height="260" rx="46"/>
   </g>
 </svg>

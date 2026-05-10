@@ -1,6 +1,6 @@
 ![Solana Stake Pools Banner](solana-stake-pools-banner.png)
 
-# 🔥 Solana Stake Pools Research (2025)
+# 🔥 Solana Stake Pools Research (2025-2026)
 
 This repository provides a structured and technical overview of major Solana stake pools as of July 2025. It also includes **live tools and a dashboard** to help validators check their eligibility and performance across these pools.
 

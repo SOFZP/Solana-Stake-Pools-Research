@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "cluster": "mainnet-beta",
-  "generated_at": "2026-07-29T19:20:02Z",
-  "registry_source_url": "https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/mainnet-beta/1009/mainnet-beta-analysis-20260729-211315.json",
+  "generated_at": "2026-07-31T08:18:24Z",
+  "registry_source_url": "https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/mainnet-beta/1010/mainnet-beta-analysis-20260731-111105.json",
   "last_aggregated_epoch": 1009,
   "epochs_count": 190,
   "name_remap": {},
@@ -193339,9 +193339,9 @@
     },
     {
       "epoch": 1009,
-      "snapshot_timestamp_utc": "2026-07-29T18:15:32+00:00",
-      "epoch_completed_percent": 25.026620370370374,
-      "snapshot_source_url": "https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/mainnet-beta/1009/mainnet-beta-analysis-20260729-211315.json",
+      "snapshot_timestamp_utc": "2026-07-31T08:03:59+00:00",
+      "epoch_completed_percent": 99.7199074074074,
+      "snapshot_source_url": "https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/mainnet-beta/1009/mainnet-beta-analysis-20260731-110145.json",
       "totals": {
         "active_lamports": 428355204468480400,
         "validator_count": 705
@@ -194106,7 +194106,7 @@
         },
         "BACKPACK_POOL": {
           "active_lamports": 54226467722256,
-          "activating_lamports": 6153687699393,
+          "activating_lamports": 6169407706959,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
@@ -194123,8 +194123,8 @@
           "validator_count": 12
         },
         "BINANCE_POOL": {
-          "active_lamports": 10172594192312068,
-          "activating_lamports": 0,
+          "active_lamports": 10162429925572252,
+          "activating_lamports": 19359451294059,
           "deactivating_lamports": 0,
           "validator_count": 5
         },
@@ -194135,14 +194135,14 @@
           "validator_count": 2
         },
         "BLAZESTAKE": {
-          "active_lamports": 893192701938854,
-          "activating_lamports": 0,
-          "deactivating_lamports": 0,
-          "validator_count": 192
+          "active_lamports": 893191397700091,
+          "activating_lamports": 10042935212698,
+          "deactivating_lamports": 3547669593453,
+          "validator_count": 195
         },
         "BOND_STAKE": {
           "active_lamports": 5972374112289,
-          "activating_lamports": 176126841667,
+          "activating_lamports": 391071445648,
           "deactivating_lamports": 268766894269,
           "validator_count": 154
         },
@@ -194153,14 +194153,14 @@
           "validator_count": 2
         },
         "BYBIT_POOL": {
-          "active_lamports": 1211397967808024,
-          "activating_lamports": 1529226010469,
+          "active_lamports": 1209581619570278,
+          "activating_lamports": 9101878857034,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
         "CRYPTO_COM_POOL": {
-          "active_lamports": 52860210000938,
-          "activating_lamports": 0,
+          "active_lamports": 52805800125266,
+          "activating_lamports": 326353308535,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
@@ -194172,25 +194172,25 @@
         },
         "DEFIN_POOL": {
           "active_lamports": 272467768842762,
-          "activating_lamports": 0,
+          "activating_lamports": 6999999709000,
           "deactivating_lamports": 0,
           "validator_count": 34
         },
         "DFDVSOL_POOL": {
-          "active_lamports": 840005829044721,
-          "activating_lamports": 0,
+          "active_lamports": 840002065914381,
+          "activating_lamports": 7342816150571,
           "deactivating_lamports": 0,
           "validator_count": 2
         },
         "DOUBLEZERO": {
-          "active_lamports": 1408400448979924,
-          "activating_lamports": 0,
-          "deactivating_lamports": 0,
-          "validator_count": 370
+          "active_lamports": 1408382198395988,
+          "activating_lamports": 100048000000000,
+          "deactivating_lamports": 99991171165820,
+          "validator_count": 374
         },
         "DRIFT_POOL": {
-          "active_lamports": 2805327165414436,
-          "activating_lamports": 0,
+          "active_lamports": 2804965065498252,
+          "activating_lamports": 12606160616,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
@@ -194202,8 +194202,8 @@
         },
         "EDGEVANA": {
           "active_lamports": 1154157896295,
-          "activating_lamports": 0,
-          "deactivating_lamports": 0,
+          "activating_lamports": 2806000000000,
+          "deactivating_lamports": 949000000000,
           "validator_count": 41
         },
         "FIREDANCER": {
@@ -194214,55 +194214,55 @@
         },
         "HANABI_POOL": {
           "active_lamports": 45552110431590,
-          "activating_lamports": 0,
+          "activating_lamports": 1326588650,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
         "HELIUS_POOL": {
-          "active_lamports": 898789976396729,
-          "activating_lamports": 0,
+          "active_lamports": 898244805061993,
+          "activating_lamports": 24039353779,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
         "ID_STAKE": {
-          "active_lamports": 18143871599920,
+          "active_lamports": 18141873281920,
           "activating_lamports": 0,
           "deactivating_lamports": 0,
-          "validator_count": 71
+          "validator_count": 70
         },
         "JAG_POOL": {
           "active_lamports": 756329134619161,
-          "activating_lamports": 0,
+          "activating_lamports": 3971175999997,
           "deactivating_lamports": 0,
           "validator_count": 86
         },
         "JITO_POOL": {
-          "active_lamports": 9914048223345192,
-          "activating_lamports": 14766065411356,
-          "deactivating_lamports": 1001233585,
-          "validator_count": 339
+          "active_lamports": 9914199009011544,
+          "activating_lamports": 38105734299634,
+          "deactivating_lamports": 77267945680476,
+          "validator_count": 340
         },
         "JPOOL_POOL": {
           "active_lamports": 1381876020314863,
           "activating_lamports": 0,
-          "deactivating_lamports": 0,
+          "deactivating_lamports": 352344970000,
           "validator_count": 208
         },
         "JUPITER_POOL": {
-          "active_lamports": 5193488485050539,
-          "activating_lamports": 1089862776822,
-          "deactivating_lamports": 0,
+          "active_lamports": 5192956408777112,
+          "activating_lamports": 4269661142154,
+          "deactivating_lamports": 177541863006,
           "validator_count": 6
         },
         "LAINE_POOL": {
-          "active_lamports": 12267915713261,
+          "active_lamports": 12261363154513,
           "activating_lamports": 0,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
         "LANTERN_POOL": {
-          "active_lamports": 17947071277733,
-          "activating_lamports": 914639449209,
+          "active_lamports": 17920047797311,
+          "activating_lamports": 1167995384713,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
@@ -194285,26 +194285,26 @@
           "validator_count": 1
         },
         "MARGINFI_POOL": {
-          "active_lamports": 92965895940229,
+          "active_lamports": 92934377717962,
           "activating_lamports": 0,
           "deactivating_lamports": 0,
           "validator_count": 34
         },
         "MARINADE": {
-          "active_lamports": 5053048565134937,
-          "activating_lamports": 549782717707,
-          "deactivating_lamports": 153690855974,
-          "validator_count": 84
+          "active_lamports": 5052856844768399,
+          "activating_lamports": 81520718070704,
+          "deactivating_lamports": 53209857576085,
+          "validator_count": 85
         },
         "MAR_SELECT": {
-          "active_lamports": 1217589120257191,
-          "activating_lamports": 0,
-          "deactivating_lamports": 0,
-          "validator_count": 31
+          "active_lamports": 1217585088372671,
+          "activating_lamports": 321313085022758,
+          "deactivating_lamports": 1289643398323,
+          "validator_count": 65
         },
         "MEXC_POOL": {
           "active_lamports": 456571052545857,
-          "activating_lamports": 0,
+          "activating_lamports": 108974972732910,
           "deactivating_lamports": 0,
           "validator_count": 4
         },
@@ -194315,13 +194315,13 @@
           "validator_count": 146
         },
         "OTHER": {
-          "active_lamports": 324064481020220540,
-          "activating_lamports": 972084050630693,
-          "deactivating_lamports": 172605427924852,
-          "validator_count": 687
+          "active_lamports": 324095743423831400,
+          "activating_lamports": 2800802643016305,
+          "deactivating_lamports": 2765660106009473,
+          "validator_count": 688
         },
         "PHANTOM_POOL": {
-          "active_lamports": 1638209868623059,
+          "active_lamports": 1638091567809291,
           "activating_lamports": 0,
           "deactivating_lamports": 0,
           "validator_count": 1
@@ -194329,38 +194329,38 @@
         "PHASE_POOL": {
           "active_lamports": 1077050783285614,
           "activating_lamports": 1949374855659,
-          "deactivating_lamports": 0,
+          "deactivating_lamports": 1895382348618,
           "validator_count": 100
         },
         "PICO_POOL": {
           "active_lamports": 20665018715130,
-          "activating_lamports": 0,
+          "activating_lamports": 3013515354,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
         "RAIKU_SOL": {
-          "active_lamports": 128654634757717,
-          "activating_lamports": 0,
+          "active_lamports": 128533676998685,
+          "activating_lamports": 847403647883,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
         "SANCTUM_POOL": {
           "active_lamports": 1827797199520044,
-          "activating_lamports": 0,
+          "activating_lamports": 3543594307068,
           "deactivating_lamports": 0,
           "validator_count": 2
         },
         "SELF_STAKE": {
           "active_lamports": 605603734995118,
-          "activating_lamports": 0,
-          "deactivating_lamports": 109555930784,
+          "activating_lamports": 37733703689,
+          "deactivating_lamports": 270079475152,
           "validator_count": 250
         },
         "SFDP_STAKE": {
           "active_lamports": 23694578923721990,
-          "activating_lamports": 0,
-          "deactivating_lamports": 0,
-          "validator_count": 363
+          "activating_lamports": 3850641305675238,
+          "deactivating_lamports": 351884926758978,
+          "validator_count": 367
         },
         "SF_INCENTIVE": {
           "active_lamports": 7913866639059805,
@@ -194369,13 +194369,13 @@
           "validator_count": 26
         },
         "SHINOBI_POOL": {
-          "active_lamports": 1072882320991458,
-          "activating_lamports": 0,
-          "deactivating_lamports": 0,
+          "active_lamports": 1056621447241467,
+          "activating_lamports": 60238051212824,
+          "deactivating_lamports": 42264862546723,
           "validator_count": 51
         },
         "SOLAYER_POOL": {
-          "active_lamports": 98716482481830,
+          "active_lamports": 98653608719169,
           "activating_lamports": 0,
           "deactivating_lamports": 0,
           "validator_count": 2
@@ -194393,22 +194393,22 @@
           "validator_count": 17
         },
         "STKE_POOL": {
-          "active_lamports": 609370632303576,
-          "activating_lamports": 0,
-          "deactivating_lamports": 0,
-          "validator_count": 74
+          "active_lamports": 608282575337037,
+          "activating_lamports": 17372771932030,
+          "deactivating_lamports": 3024060984,
+          "validator_count": 78
         },
         "STRONGHOLD_POOL": {
-          "active_lamports": 42646694432680,
+          "active_lamports": 42645106448196,
           "activating_lamports": 0,
           "deactivating_lamports": 0,
           "validator_count": 1
         },
         "VAULT_POOL": {
           "active_lamports": 1318856998991503,
-          "activating_lamports": 21180606997386,
-          "deactivating_lamports": 0,
-          "validator_count": 150
+          "activating_lamports": 21707007704363,
+          "deactivating_lamports": 15537509189741,
+          "validator_count": 152
         },
         "ZIPPY_STAKE": {
           "active_lamports": 87355303642,

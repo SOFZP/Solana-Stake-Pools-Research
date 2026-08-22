@@ -15,7 +15,7 @@ The research is intended for validator operators, contributors, and tooling deve
 These are the primary tools developed from this research, now available for public use.
 
 * ### 📊 **[Solana Stake Pools Dashboard](https://cryptovik.info/solana-stakepools-dashboard/)**
-    The main result of this project. A live, network-wide view of Solana stake flows: per-pool, per-validator, per-epoch granularity since epoch 820, refreshed roughly every 2.5 hours. Every pool section below links straight to its live page.
+    The main result of this project. A live, network-wide view of Solana stake flows: per-pool, per-validator, per-epoch granularity since epoch 820, live data refreshed about every 20 minutes, with full snapshots archived roughly every 2 hours and at the epoch boundary. Every pool section below links straight to its live page.
 
 * ### ⚙️ **[Validator Stake Pools Checker (CLI)](https://github.com/SOFZP/Solana-Stake-Pools-Checker)**
     A command-line script to check a specific validator's Stake Set for various stake pools. Ideal for automated checks and integrations, with support for JSON output.
@@ -89,7 +89,7 @@ This repository also serves as a source for curated stake pool data.
     The master registry powering the dashboard and the CLI tool. One row per on-chain authority: ```short_name```, ```type```, ```group```, ```category```, ```public_key```, ```long_name```, ```description```, ```url```, ```image```.
 
 * **[On-Chain Stake Data Archive](https://github.com/SOFZP/Solana-Stake-Pools-Research/tree/main/stakepool-data/mainnet-beta)**
-    Historical on-chain data showing stake distribution across all validators in the ```mainnet-beta``` cluster. Collected roughly every 2.5 hours, with full epoch-by-epoch snapshots since epoch 820.
+    Historical on-chain data showing stake distribution across all validators in the ```mainnet-beta``` cluster. Live data refreshes about every 20 minutes; full snapshots are archived roughly every 2 hours and at the epoch boundary, epoch by epoch since epoch 820.
 
 ---
 

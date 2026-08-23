@@ -91,6 +91,8 @@ This repository also serves as a source for curated stake pool data.
 * **[On-Chain Stake Data Archive](https://github.com/SOFZP/Solana-Stake-Pools-Research/tree/main/stakepool-data/mainnet-beta)**
     Historical on-chain data showing stake distribution across all validators in the ```mainnet-beta``` cluster. Live data refreshes about every 20 minutes; full snapshots are archived roughly every 2 hours and at the epoch boundary, epoch by epoch since epoch 820.
 
+**Public JSON API:** the same data is served from `https://data.cryptovik.info/v1/` with a live endpoint, a machine-readable status file and immutable epoch archives. See [DATA_API.md](DATA_API.md) for the endpoint reference and [ARCHITECTURE.md](ARCHITECTURE.md) for how the pipeline works.
+
 ---
 
 ## 📘 Notes on Stake Pools

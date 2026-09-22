@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "cluster": "mainnet-beta",
-  "generated_at": "2026-09-20T21:16:49Z",
-  "registry_source_url": "https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/mainnet-beta/1039/mainnet-beta-analysis-20260921-000654.json",
-  "last_aggregated_epoch": 1038,
-  "epochs_count": 219,
+  "generated_at": "2026-09-22T05:23:39Z",
+  "registry_source_url": "https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/mainnet-beta/1040/mainnet-beta-analysis-20260922-081231.json",
+  "last_aggregated_epoch": 1039,
+  "epochs_count": 220,
   "name_remap": {},
   "epochs": [
     {
@@ -228764,6 +228764,1230 @@
         },
         "ZIPPY_STAKE": {
           "active_lamports": 74745757341,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        }
+      }
+    },
+    {
+      "epoch": 1039,
+      "snapshot_timestamp_utc": "2026-09-22T05:00:20+00:00",
+      "epoch_completed_percent": 99.39004629629629,
+      "snapshot_source_url": "https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/mainnet-beta/1039/mainnet-beta-analysis-20260922-075805.json",
+      "totals": {
+        "active_lamports": 439905518627461700,
+        "validator_count": 691
+      },
+      "pool_definitions": [
+        {
+          "group": "ADRA_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "ADRA_POOL",
+          "public_key": "DJ5zc5UhPCAbFhudnw1RqrgcQimUzh5th6WEGtTN12NS",
+          "type": "W"
+        },
+        {
+          "group": "ALAMEDA_MAIN",
+          "category": "ALAMEDA_OLD_STAKES",
+          "short_name": "ALAMEDA_STAKE",
+          "public_key": "EhYXq3ANp5nAerUpbSgd7VK2RRcxK1zNuSQ755G5Mtxx",
+          "type": "W"
+        },
+        {
+          "group": "ALAMEDA_PLUS",
+          "category": "ALAMEDA_OLD_STAKES",
+          "short_name": "ALAMEDA3",
+          "public_key": "DYG1ooTxkLS5iHDkte2XK4QBrpHziDR6EEZg5VsqNpVo",
+          "type": "W"
+        },
+        {
+          "group": "ALAMEDA_PLUS",
+          "category": "ALAMEDA_OLD_STAKES",
+          "short_name": "ALAMEDA2",
+          "public_key": "e6keeZrGmHMiQaFM3TAYvFz8HE3qtTFUSHsyqq5FEw7",
+          "type": "W"
+        },
+        {
+          "group": "AXIOM_SOL",
+          "category": "DEX_POOL",
+          "short_name": "AXIOM_SOL",
+          "public_key": "DoJahc3Eqxoe8kAUWveu1srApZo19tLYLb6pJe11sofg",
+          "type": "W"
+        },
+        {
+          "group": "BACKPACK_POOL",
+          "category": "CEX_POOL",
+          "short_name": "BACKPACK_POOL",
+          "public_key": "5hhYv4b1Bt5sdMGYyyvpciwRbyUD1ZWeCmTaQcuvb7Eg",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "GALAXY_LOCKED_1",
+          "public_key": "2Wk4x9xaxmqvXr7amKA36UaQzPcqri3HCGmg6wWxo7c5",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_10",
+          "public_key": "2bLAhUnFRsVxxnZkthn5iWgaP1adCy4w56hKhXEUWz7j",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_6",
+          "public_key": "2qdMfZ1VzQJmHMfdiDVQoEWSMSDZhoGohrjvtShSQUnf",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_17",
+          "public_key": "3WQumJtBjETSXqEY9SR6Ma1QC3e63hpWSqWATaoM4G7n",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "GALAXY_LOCKED_2",
+          "public_key": "3j79gPSKJReLX5pn8D6CDwViJ9kFCV1Es27X882DgLXk",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_26",
+          "public_key": "3puTvfW62a5kQG6ERjvtsAAJbHzaXqwbaWdYRZEtPoiQ",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_4",
+          "public_key": "3y7XHdgciVwveMTGzGmsZR688g7t1udUPbTLsfdNWjFF",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_13",
+          "public_key": "45s8vaeVytNhkAS1SmoSAPP7FqMj2j2vCCKSGqw1qv88",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_20",
+          "public_key": "4YGkCUCr79MBMmLGXDfnYqwtnivBKkmA8EyEoJ1HkA7w",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_5",
+          "public_key": "4kggxftsQDtbKG9riwEBGekJGrqVNYsxn3NHMwpJ5emb",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_11",
+          "public_key": "5M6CzovPFsAdokefzdu7oBBgCYcTYN1BsgzXN5h8PJ9g",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_24",
+          "public_key": "5cnuyZiJg7de34R5gKqzP2PibkjEfBzzdfgw5CXdkdJL",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_2",
+          "public_key": "6xAjFF1PhC26QJmVCNBoY74VuDU5PY2bR5sUcXteyoat",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_15",
+          "public_key": "7DrC5txJhVDNWSC5o6kTgVPS4A8VVQ26NrJaCQo9kAHM",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_19",
+          "public_key": "9JJ99U84vZBCjK6xvJ2GmqCSxxmoPGt1k7whoYnkuPux",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_23",
+          "public_key": "9PyDd5Wm7ScKUURSFqV8xXnPQbTNa2fyPVTngQw1fWmP",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_12",
+          "public_key": "9yhkdbkVNwyyLL9Wa4M4eZLm22FR27fTiTHZb7LaQ4po",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_22",
+          "public_key": "AYEZ63FHo1naGdYXKgafmremSEt1sczHBNgR1VEpNr7A",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_3",
+          "public_key": "B1FN6n7pzuKyFnnKC68jU9UePTdAFqhcBMMsYJ5UeyYk",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_9",
+          "public_key": "BJgtsCvZjrxKps4dnzpAgJUNVsU3Es4vFLLzoDJGztYd",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_18",
+          "public_key": "BybZQn9tcc9oc7PsCxGDmyExCtxBjBC2GaVQHNd52cgs",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_7",
+          "public_key": "CfwaCHVzZakhCCD4YbW93jkh9GyM56XvrhXBpi3okVFS",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_8",
+          "public_key": "CkDWVUpjDbpwA1HSisLAUgJrwEWez2FD9xZFJt6BASeA",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_25",
+          "public_key": "Cx2qc1kK1xvqGP9AUUbQX1kM9LnNveZCBfru6yKFSoLQ",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "GALAXY_LOCKED_3",
+          "public_key": "DCWLAUVb2qFdxnXptgTV8sQUGAhWBeYBgXMB1PEJf7Po",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_1",
+          "public_key": "G62LeCBehaarj5iVh58s7QTC61upEJiJhuK3BCQ2GqW6",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_14",
+          "public_key": "G8q5LV64ebNFPbTJmGfFcmc1RtNoAuWV6PJhetDgVW8X",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_16",
+          "public_key": "GLKg6ciaFK6iy49zFz6ZPXPjedUAt1ovznMXWLnKD1rv",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "GALAXY_LOCKED_4",
+          "public_key": "GzDmgVCX3QHtZ2bdqLtSFunt321KUWZSGP72KuQ7MX9L",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?FTX_ALAMEDA",
+          "public_key": "H4yiPhdSsmSMJTznXzmZvdqWuhxDRzzkoQMEWXZ6agFZ",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_27",
+          "public_key": "HnjVN4SCUsoarK97MwLaq8zVTXc3JKphrWq1NzDrE9H8",
+          "type": "W"
+        },
+        {
+          "group": "BIG_CURRENT_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "?2025_LOCKED_21",
+          "public_key": "cLGWXwJ53C1yDuf57gEs8egjAwk12oSvrGzQ21upSKh",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_11",
+          "public_key": "21uFTR9S5LptdR2tBxVeG1KAsKXB7tESqQVT8KRU7Vnj",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_4",
+          "public_key": "2YcwVbKx9L25Jpaj2vfWSXD5UKugZumWjzEe6suBUJi2",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_10",
+          "public_key": "5LJ93G4SQh9GiewTQJNAu6X9sQ1VVyrpCAgbQsRSgn22",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_6",
+          "public_key": "7VMTVroogF6GhVunnUWF9hX8JiXqPHiZoG3VKAe64Ckt",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_9",
+          "public_key": "7dPqBYywCgLmjuHmexrEJLTCuoFpEUEf31Mjkjhz15wv",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_8",
+          "public_key": "7hbKGnBZEFF3Bwd9HFetDkLDHXycjvCATFUnj1nEzV85",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_3",
+          "public_key": "8g3YB8KxpWEAAvcjom5vSqxJAZczZBgB4pEgsssts86K",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_5",
+          "public_key": "DU5XJS2Cm8ftMmi5eZZJg8nkgx1hnZ3nT5sPU3GzV1fo",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_1",
+          "public_key": "EcH12jxhrbhF6qHqRzWpZ8rZU3TjG3sX6F67zP61oDJG",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_12",
+          "public_key": "F5U6ac2vLzv3pYsxPVPYhhvxZY7u2WJMQEk81E3keMhX",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_7",
+          "public_key": "GunPZHAJc5DH8qARPz8x6UXAsoR3NDadFYs3bxtMZsvg",
+          "type": "W"
+        },
+        {
+          "group": "BIG_OLD_ONCE_LOCKED",
+          "category": "BIG_OLD_LOCK_STAKES",
+          "short_name": "BIG_OLD_LOCKED_2",
+          "public_key": "HKd8LdhjUyhp2z4kYgpJxc4pzKCCKR4yC14EFSLNENtw",
+          "type": "W"
+        },
+        {
+          "group": "BINANCE_POOL",
+          "category": "CEX_POOL",
+          "short_name": "BINANCE_POOL",
+          "public_key": "75NPzpxoh8sXGuSENFMREidq6FMzEx4g2AfcBEB6qjCV",
+          "type": "W"
+        },
+        {
+          "group": "BITGET_POOL",
+          "category": "CEX_POOL",
+          "short_name": "BITGET_POOL",
+          "public_key": "EVhp44NGYxxrxhv2NyFyErEKcsiffvssju5K7C5xydye",
+          "type": "W"
+        },
+        {
+          "group": "BLAZESTAKE",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "BLAZESTAKE",
+          "public_key": "6WecYymEARvjG5ZyqkrVQ6YkhPfujNzWpSPwNKXHCbV2",
+          "type": "W"
+        },
+        {
+          "group": "BOND_STAKE",
+          "category": "OWN_STAKES",
+          "short_name": "BOND_MAR",
+          "public_key": "7cgg6KhPd1G8oaoB48RyPDWu7uZs51jUpDYB3eq4VebH",
+          "type": "W"
+        },
+        {
+          "group": "BONK_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "BONK_POOL",
+          "public_key": "9LcmMfufi8YUcx83RALwF9Y9BPWZ7SqGy4D9VLe2nhhA",
+          "type": "W"
+        },
+        {
+          "group": "BULK_SOL",
+          "category": "DEX_POOL",
+          "short_name": "BULK_SOL",
+          "public_key": "tjbFnqBF8xwBbU7qg46mU5McehUVJLMU5gVryE25D9F",
+          "type": "W"
+        },
+        {
+          "group": "BYBIT_POOL",
+          "category": "CEX_POOL",
+          "short_name": "BYBIT_POOL",
+          "public_key": "3pFTQjRVwcJHSpUNH5n1hx6Jwx7V3EzJDDHaKuwExyGJ",
+          "type": "W"
+        },
+        {
+          "group": "CORVUS_SOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "CORVUS_SOL",
+          "public_key": "UTaViEBKZECiHx4B2knZXZ5fbzLLesj9jFZDkeMzzcD",
+          "type": "W"
+        },
+        {
+          "group": "CRYPTO_COM_POOL",
+          "category": "CEX_POOL",
+          "short_name": "CRYPTO_COM_POOL",
+          "public_key": "GiqwVAud4dH939qajy4F33Cht84kzutxJnGHez4urXnJ",
+          "type": "W"
+        },
+        {
+          "group": "DAO_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "DAO_POOL",
+          "public_key": "BbyX1GwUNsfbcoWwnkZDo8sqGmwNDzs2765RpjyQ1pQb",
+          "type": "W"
+        },
+        {
+          "group": "DEFIN_POOL",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "DEFIN_POOL",
+          "public_key": "5ugu8RogBq5ZdfGt4hKxKotRBkndiV1ndsqWCf7PBmST",
+          "type": "W"
+        },
+        {
+          "group": "DFDVSOL_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "DFDVSOL_POOL",
+          "public_key": "7cWNhDsHe1m36ttDkJVBgbee1hRFvPqWZT2iWaBAyYGW",
+          "type": "W"
+        },
+        {
+          "group": "DOUBLEZERO",
+          "category": "DELEGATION_PROGRAMS",
+          "short_name": "DOUBLEZERO",
+          "public_key": "4cpnpiwgBfUgELVwNYiecwGti45YHSH3R72CPkFTiwJt",
+          "type": "W"
+        },
+        {
+          "group": "DRIFT_POOL",
+          "category": "DEX_POOL",
+          "short_name": "DRIFT_POOL",
+          "public_key": "6727ZvQ2YEz8jky1Z9fqDFG5mYuAvC9G34o2MxwzmrUK",
+          "type": "W"
+        },
+        {
+          "group": "DYNO_POOL",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "DYNO_POOL",
+          "public_key": "BqPJdYKKpReEfXHv8kgdmRcBfLToBSHpt1qThtb52GSs",
+          "type": "W"
+        },
+        {
+          "group": "EDGEVANA",
+          "category": "PERFORMANCE_POOLS",
+          "short_name": "EDGEVANA",
+          "public_key": "FZEaZMmrRC3PDPFMzqooKLS2JjoyVkKNd2MkHjr7Xvyq",
+          "type": "W"
+        },
+        {
+          "group": "EVERSOL_STAKE",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "EVERSOL_STAKE",
+          "public_key": "C4NeuptywfXuyWB9A7H7g5jHVDE8L6Nj2hS53tA71KPn",
+          "type": "W"
+        },
+        {
+          "group": "FIREDANCER",
+          "category": "DELEGATION_PROGRAMS",
+          "short_name": "FIREDANCER",
+          "public_key": "AjLzAtJHDVQ4c2WMnSXt94a5BNt4CorH63af2uEmgkyF",
+          "type": "W"
+        },
+        {
+          "group": "FORWARD_SOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "FORWARD_SOL",
+          "public_key": "3ndMuPC9Cz5VC4RJkpoPaZz6Px6eVXtRenw9Yi1o2xnA",
+          "type": "W"
+        },
+        {
+          "group": "GATE_SOL",
+          "category": "CEX_POOL",
+          "short_name": "GATE_SOL",
+          "public_key": "9BadxcrgcZ1in6CfVMsU6PHU45rzLrEjcd4FQMjXNbM5",
+          "type": "W"
+        },
+        {
+          "group": "HANABI_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "HANABI_POOL",
+          "public_key": "B7oQQtF7Wdzp7acSqpp5KWWigpywipBN84NVeosf7CxA",
+          "type": "W"
+        },
+        {
+          "group": "HELIUS_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "HELIUS_POOL",
+          "public_key": "2rMuGTyXCqCHZBSu6NZR9Aq8MhZX9gLkCHoQsPhSj2YF",
+          "type": "W"
+        },
+        {
+          "group": "HYLO_SOL",
+          "category": "DEX_POOL",
+          "short_name": "HYLO_SOL",
+          "public_key": "2C9aTiNL6VyrPhFKspZC8BY9JeL3j4RtkPP2e4PrVAwP",
+          "type": "W"
+        },
+        {
+          "group": "ID_STAKE",
+          "category": "OWN_STAKES",
+          "short_name": "ID_STAKE",
+          "public_key": "YOUR_NODE_IDENTITY",
+          "type": "W"
+        },
+        {
+          "group": "JAG_POOL",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "JAG_POOL",
+          "public_key": "Hodkwm8xf43JzRuKNYPGnYJ7V9cXZ7LJGNy96TWQiSGN",
+          "type": "W"
+        },
+        {
+          "group": "JITO_POOL",
+          "category": "PERFORMANCE_POOLS",
+          "short_name": "JITO_POOL",
+          "public_key": "6iQKfEyhr3bZMotVkW6beNZz5CPAkiwvgV2CTje9pVSS",
+          "type": "W"
+        },
+        {
+          "group": "JPOOL_POOL",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "JPOOL_POOL",
+          "public_key": "HbJTxftxnXgpePCshA8FubsRj9MW4kfPscfuUfn44fnt",
+          "type": "W"
+        },
+        {
+          "group": "JUPITER_POOL",
+          "category": "DEX_POOL",
+          "short_name": "JUPITER_POOL",
+          "public_key": "EMjuABxELpYWYEwjkKmQKBNCwdaFAy4QYAs6W9bDQDNw",
+          "type": "W"
+        },
+        {
+          "group": "LAINE_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "LAINE_POOL",
+          "public_key": "AAbVVaokj2VSZCmSU5Uzmxi6mxrG1n6StW9mnaWwN6cv",
+          "type": "W"
+        },
+        {
+          "group": "LANTERN_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "LANTERN_POOL",
+          "public_key": "6Sw4WcMTakZFrd19Q4hTH8ewiLxXXTCuBdVxAaneg1fo",
+          "type": "W"
+        },
+        {
+          "group": "LAYER33_POOL",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "LAYER33_POOL",
+          "public_key": "FQS7JfBjCUiSj6JRHZWqnuM8FNxnDrbaoErCXXe6fAj8",
+          "type": "W"
+        },
+        {
+          "group": "LIDO_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "LIDO_POOL",
+          "public_key": "W1ZQRwUfSkDKy2oefRBUWph82Vr2zg9txWMA8RQazN5",
+          "type": "W"
+        },
+        {
+          "group": "MANGO_SOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "MANGO_SOL",
+          "public_key": "BKi84JsPEnXT4UBTZtET5h8Uf2y3qLWAnyAZXtMVNK1o",
+          "type": "W"
+        },
+        {
+          "group": "MARGINFI_POOL",
+          "category": "DEX_POOL",
+          "short_name": "MARGINFI_POOL",
+          "public_key": "3b7XQeZ8nSMyjcQGTFJS5kBw4pXS2SqtB9ooHCnF2xV9",
+          "type": "W"
+        },
+        {
+          "group": "MARINADE",
+          "category": "PAID_STAKEPOOLS",
+          "short_name": "MARINADE2",
+          "public_key": "4bZ6o3eUUNXhKuqjdCnCoPAoLgWiuLYixKaxoa8PpiKk",
+          "type": "W"
+        },
+        {
+          "group": "MARINADE",
+          "category": "PAID_STAKEPOOLS",
+          "short_name": "MARINADE",
+          "public_key": "9eG63CdHjsfhHmobHgLtESGC8GabbmRcaSpHAZrtmhco",
+          "type": "W"
+        },
+        {
+          "group": "MARINADE",
+          "category": "PAID_STAKEPOOLS",
+          "short_name": "MARINADE_N",
+          "public_key": "CyAH9f9awBcfuZqHzwwEs4uJBLEG33S743jxnQX1KcZ6",
+          "type": "W"
+        },
+        {
+          "group": "MARINADE",
+          "category": "PAID_STAKEPOOLS",
+          "short_name": "MAR_NATIVE_2",
+          "public_key": "ex9CfkBZZd6Nv9XdnoDmmB45ymbu4arXVk7g5pWnt3N",
+          "type": "S"
+        },
+        {
+          "group": "MARINADE",
+          "category": "PAID_STAKEPOOLS",
+          "short_name": "MAR_NATIVE_1",
+          "public_key": "stWirqFCf2Uts1JBL1Jsd3r6VBWhgnpdPxCTe1MFjrq",
+          "type": "S"
+        },
+        {
+          "group": "MAR_SELECT",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "MAR_SELECT",
+          "public_key": "STNi1NHDUi6Hvibvonawgze8fM83PFLeJhuGMEXyGps",
+          "type": "S"
+        },
+        {
+          "group": "MEXC_POOL",
+          "category": "CEX_POOL",
+          "short_name": "MEXC_POOL",
+          "public_key": "ECVFhdhHYpVmHDUD7b6N4Y38HGL2GXHj4wnmqPmjZ4U4",
+          "type": "W"
+        },
+        {
+          "group": "MINOR_POOL",
+          "category": "MINOR_POOLS",
+          "short_name": "UNKNOWN_POOL2",
+          "public_key": "7TdbUsGdmK2PfyLYQmnvJJcK6xWrs2AFtHjc575WRsmW",
+          "type": "W"
+        },
+        {
+          "group": "MINOR_POOL",
+          "category": "MINOR_POOLS",
+          "short_name": "UNKNOWN_POOL1",
+          "public_key": "HXdYQ5gixrY2H6Y9gqsD8kPM2JQKSaRiohDQtLbZkRWE",
+          "type": "W"
+        },
+        {
+          "group": "PHANTOM_POOL",
+          "category": "DEX_POOL",
+          "short_name": "PHANTOM_POOL",
+          "public_key": "2zeXA69dFoMLFLdzCfcff35aL7Y7uBZnjKBGWtESgVfS",
+          "type": "W"
+        },
+        {
+          "group": "PHASE_POOL",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "PHASE_POOL",
+          "public_key": "AKJt3m2xJ6ANda9adBGqb5BMrheKJSwxyCfYkLuZNmjn",
+          "type": "W"
+        },
+        {
+          "group": "PICO_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "PICO_POOL",
+          "public_key": "4At8nQXanWgRvjbrVXmxMBBdfz39txWVm4SiXEoP1kGh",
+          "type": "W"
+        },
+        {
+          "group": "PRISMA_SOL",
+          "category": "DEX_POOL",
+          "short_name": "PRISMA_SOL",
+          "public_key": "HjVeQiauFCfwu23FbNmVkoUnZsLzsfRQMLCr3VVdj8cz",
+          "type": "W"
+        },
+        {
+          "group": "RAIKU_SOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "RAIKU_SOL",
+          "public_key": "F6LLwairYCMHoAZqRUbCD8HgXmPag1D6YVVKAkS5L4Jb",
+          "type": "W"
+        },
+        {
+          "group": "RAKURAI_SOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "RAKURAI_SOL",
+          "public_key": "5U6ar3a2CQMRhu5d5xBA9E7Gi6xqx45wrXx38vKjU3L9",
+          "type": "W"
+        },
+        {
+          "group": "SANCTUM_POOL",
+          "category": "DEX_POOL",
+          "short_name": "SANCTUM_POOL",
+          "public_key": "5rxZiXpLsiuuyFpAocu5dbxmM6HUpygJ6aChmfr5s8Av",
+          "type": "W"
+        },
+        {
+          "group": "SAVE_SOL",
+          "category": "DEX_POOL",
+          "short_name": "SAVE_SOL",
+          "public_key": "9yWcz4S27nXKpsVmWqaimphCUnFo441JUvwkzmvRWys3",
+          "type": "W"
+        },
+        {
+          "group": "SELF_STAKE",
+          "category": "OWN_STAKES",
+          "short_name": "SELF_STAKE",
+          "public_key": "YOUR_NODE_WITHDRAW_AUTHORITY",
+          "type": "W"
+        },
+        {
+          "group": "SFDP_STAKE",
+          "category": "DELEGATION_PROGRAMS",
+          "short_name": "FOUNDATION",
+          "public_key": "4ZJhPQAgUseCsWhKvJLTmmRRUV74fdoTpQLNfKoekbPY",
+          "type": "W"
+        },
+        {
+          "group": "SFDP_STAKE",
+          "category": "DELEGATION_PROGRAMS",
+          "short_name": "FOUNDATION_2",
+          "public_key": "BVPWEKqzHD4H2pAX34wbtn33eNpzx6KxHxuaJW7uKZei",
+          "type": "W"
+        },
+        {
+          "group": "SFDP_STAKE",
+          "category": "DELEGATION_PROGRAMS",
+          "short_name": "SFDP_TESTNET",
+          "public_key": "mvines9iiHiQTysrwkJjGf2gb9Ex9jXJX8ns3qwf2kN",
+          "type": "W"
+        },
+        {
+          "group": "SFSOL_LST",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "SFSOL_LST",
+          "public_key": "GYcF4ugBEBBeKMvzDtjBMj2ickUjnxxDiQ5gtjKnU5kT",
+          "type": "W"
+        },
+        {
+          "group": "SF_INCENTIVE",
+          "category": "DELEGATION_PROGRAMS",
+          "short_name": "SF_INCENTIVE",
+          "public_key": "8fxe1qGoDVLtqe9PAFyV4kR6zryTDyGQYb9AZQVUCvpM",
+          "type": "W"
+        },
+        {
+          "group": "SHARK_POOL",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "SHARK_POOL",
+          "public_key": "12bX3M9rnu1HWG87BwGfxeE5ouhWAJpdSqwBWiP8hnuQ",
+          "type": "W"
+        },
+        {
+          "group": "SHINOBI_POOL",
+          "category": "PERFORMANCE_POOLS",
+          "short_name": "SHINOBI_POOL",
+          "public_key": "EpH4ZKSeViL5qAHA9QANYVHxdmuzbUH2T79f32DmSCaM",
+          "type": "W"
+        },
+        {
+          "group": "SOCEAN_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "SOCEAN_POOL",
+          "public_key": "AzZRvyyMHBm8EHEksWxq4ozFL7JxLMydCDMGhqM6BVck",
+          "type": "W"
+        },
+        {
+          "group": "SOLAYER_POOL",
+          "category": "DEX_POOL",
+          "short_name": "SOLAYER_POOL",
+          "public_key": "H5rmot8ejBUWzMPt6E44h27xj5obbSz3jVuK4AsJpHmv",
+          "type": "W"
+        },
+        {
+          "group": "STARKE_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "STARKE_POOL",
+          "public_key": "8uKJ5wLUFXYdqTJw2JHRzdcWB8JLR96mEf9dreqD6d5X",
+          "type": "W"
+        },
+        {
+          "group": "STAR_POOL",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "STAR_POOL",
+          "public_key": "JBV9qdbKkiz1WmszJuL7qGuAYE2suPP6YU5R7gHqCGRe",
+          "type": "W"
+        },
+        {
+          "group": "STKE_POOL",
+          "category": "PERFORMANCE_POOLS",
+          "short_name": "STKE_POOL",
+          "public_key": "5vzKiHVuZNx1XQWQZQEcuqKaq4nfDp6LhuSvowQK2ayd",
+          "type": "W"
+        },
+        {
+          "group": "STRONGHOLD_POOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "STRONGHOLD_POOL",
+          "public_key": "ABCTazdzA7j6CHbnuetnWuvpeKh2XmxqVP75D8KJfsSK",
+          "type": "W"
+        },
+        {
+          "group": "THETA_SOL",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "THETA_SOL",
+          "public_key": "2SqLr2wcXDDMSozGNaDVo1L1t781WvVjyt4v4hwAuqrx",
+          "type": "W"
+        },
+        {
+          "group": "VAULT_POOL",
+          "category": "COMMUNITY_POOLS",
+          "short_name": "VAULT_POOL",
+          "public_key": "GdNXJobf8fbTR5JSE7adxa6niaygjx4EEbnnRaDCHMMW",
+          "type": "W"
+        },
+        {
+          "group": "ZIPPY_STAKE",
+          "category": "PRIVATE_STAKEPOOLS",
+          "short_name": "ZIPPY_STAKE",
+          "public_key": "F15nfVkJFAa3H4BaHEb6hQBnmiJZwPYioDiE1yxbc5y4",
+          "type": "W"
+        }
+      ],
+      "pool_stats": {
+        "ADRA_POOL": {
+          "active_lamports": 411767674352,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "AXIOM_SOL": {
+          "active_lamports": 3065567560881,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "BACKPACK_POOL": {
+          "active_lamports": 61513297668740,
+          "activating_lamports": 186360118902,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "BIG_CURRENT_LOCKED": {
+          "active_lamports": 15700682326614372,
+          "activating_lamports": 0,
+          "deactivating_lamports": 137499000000000,
+          "validator_count": 10
+        },
+        "BIG_OLD_ONCE_LOCKED": {
+          "active_lamports": 1732877028726790,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 14
+        },
+        "BINANCE_POOL": {
+          "active_lamports": 10243336212978892,
+          "activating_lamports": 386034891707,
+          "deactivating_lamports": 0,
+          "validator_count": 5
+        },
+        "BITGET_POOL": {
+          "active_lamports": 375786255183071,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 2
+        },
+        "BLAZESTAKE": {
+          "active_lamports": 912318514050635,
+          "activating_lamports": 52142702949,
+          "deactivating_lamports": 680009687999,
+          "validator_count": 229
+        },
+        "BOND_STAKE": {
+          "active_lamports": 5087146390116,
+          "activating_lamports": 288597223883,
+          "deactivating_lamports": 242224663586,
+          "validator_count": 149
+        },
+        "BONK_POOL": {
+          "active_lamports": 100200790495510,
+          "activating_lamports": 2625030304,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "BULK_SOL": {
+          "active_lamports": 211699278933724,
+          "activating_lamports": 21237210281,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "BYBIT_POOL": {
+          "active_lamports": 1246227728711782,
+          "activating_lamports": 4423762823741,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "CORVUS_SOL": {
+          "active_lamports": 37439062104056,
+          "activating_lamports": 1611661504,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "CRYPTO_COM_POOL": {
+          "active_lamports": 50960146648691,
+          "activating_lamports": 8852441347,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "DAO_POOL": {
+          "active_lamports": 864372005075,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "DEFIN_POOL": {
+          "active_lamports": 299521663274107,
+          "activating_lamports": 8533698642000,
+          "deactivating_lamports": 0,
+          "validator_count": 38
+        },
+        "DFDVSOL_POOL": {
+          "active_lamports": 1591344786293870,
+          "activating_lamports": 71657917880,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "DOUBLEZERO": {
+          "active_lamports": 698862086530369,
+          "activating_lamports": 5119000000000,
+          "deactivating_lamports": 1824000000000,
+          "validator_count": 341
+        },
+        "DRIFT_POOL": {
+          "active_lamports": 2819231777728355,
+          "activating_lamports": 6339843826,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "DYNO_POOL": {
+          "active_lamports": 1665640759287881,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 73
+        },
+        "EDGEVANA": {
+          "active_lamports": 1058981669302,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "FIREDANCER": {
+          "active_lamports": 5380548108,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "FORWARD_SOL": {
+          "active_lamports": 2068527024073468,
+          "activating_lamports": 17690951254,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "GATE_SOL": {
+          "active_lamports": 659515293286015,
+          "activating_lamports": 3157543635,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "HANABI_POOL": {
+          "active_lamports": 43818426049190,
+          "activating_lamports": 1055358885,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "HELIUS_POOL": {
+          "active_lamports": 946180238413476,
+          "activating_lamports": 1771956747481,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "HYLO_SOL": {
+          "active_lamports": 188625860205890,
+          "activating_lamports": 352016211829,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "ID_STAKE": {
+          "active_lamports": 2487980332141,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 61
+        },
+        "JAG_POOL": {
+          "active_lamports": 765508282233759,
+          "activating_lamports": 11630261910,
+          "deactivating_lamports": 87715315252,
+          "validator_count": 76
+        },
+        "JITO_POOL": {
+          "active_lamports": 10299276320639042,
+          "activating_lamports": 37715415449675,
+          "deactivating_lamports": 41652655593856,
+          "validator_count": 411
+        },
+        "JPOOL_POOL": {
+          "active_lamports": 1269472664817318,
+          "activating_lamports": 528036970000,
+          "deactivating_lamports": 798467380000,
+          "validator_count": 210
+        },
+        "JUPITER_POOL": {
+          "active_lamports": 5159280585040083,
+          "activating_lamports": 14082729569931,
+          "deactivating_lamports": 112515022758,
+          "validator_count": 7
+        },
+        "LAINE_POOL": {
+          "active_lamports": 11954245172679,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "LANTERN_POOL": {
+          "active_lamports": 28552683392222,
+          "activating_lamports": 2828112953,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "LAYER33_POOL": {
+          "active_lamports": 287944774007,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 21
+        },
+        "LIDO_POOL": {
+          "active_lamports": 13689247899,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 11
+        },
+        "MANGO_SOL": {
+          "active_lamports": 13823274195714,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "MARGINFI_POOL": {
+          "active_lamports": 95212926896511,
+          "activating_lamports": 0,
+          "deactivating_lamports": 191369791,
+          "validator_count": 31
+        },
+        "MARINADE": {
+          "active_lamports": 6040848649241303,
+          "activating_lamports": 96541112330775,
+          "deactivating_lamports": 108831931023918,
+          "validator_count": 90
+        },
+        "MAR_SELECT": {
+          "active_lamports": 1664878086719581,
+          "activating_lamports": 1945078544216,
+          "deactivating_lamports": 1709443605225,
+          "validator_count": 64
+        },
+        "MEXC_POOL": {
+          "active_lamports": 575506396568743,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 4
+        },
+        "MINOR_POOL": {
+          "active_lamports": 432773817460,
+          "activating_lamports": 0,
+          "deactivating_lamports": 2615069732,
+          "validator_count": 137
+        },
+        "OTHER": {
+          "active_lamports": 328946846347837060,
+          "activating_lamports": 1085104522889052,
+          "deactivating_lamports": 1217093535407234,
+          "validator_count": 669
+        },
+        "PHANTOM_POOL": {
+          "active_lamports": 1610434694812369,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "PHASE_POOL": {
+          "active_lamports": 1039981131221596,
+          "activating_lamports": 49882600768865,
+          "deactivating_lamports": 3472045212664,
+          "validator_count": 105
+        },
+        "PICO_POOL": {
+          "active_lamports": 19508928037172,
+          "activating_lamports": 2028709124,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "PRISMA_SOL": {
+          "active_lamports": 42815354225070,
+          "activating_lamports": 8694365962702,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "RAIKU_SOL": {
+          "active_lamports": 180578147405941,
+          "activating_lamports": 1434818188,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "RAKURAI_SOL": {
+          "active_lamports": 27018272504687,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "SANCTUM_POOL": {
+          "active_lamports": 1742104711934577,
+          "activating_lamports": 3010289835996,
+          "deactivating_lamports": 0,
+          "validator_count": 2
+        },
+        "SAVE_SOL": {
+          "active_lamports": 61070832900972,
+          "activating_lamports": 10254582603,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "SELF_STAKE": {
+          "active_lamports": 510263842274464,
+          "activating_lamports": 24309780558,
+          "deactivating_lamports": 0,
+          "validator_count": 225
+        },
+        "SFDP_STAKE": {
+          "active_lamports": 27030155156769850,
+          "activating_lamports": 184106929195461,
+          "deactivating_lamports": 69496453711676,
+          "validator_count": 359
+        },
+        "SFSOL_LST": {
+          "active_lamports": 17645728713203,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "SF_INCENTIVE": {
+          "active_lamports": 7971657986505713,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 26
+        },
+        "SHINOBI_POOL": {
+          "active_lamports": 1084606030351036,
+          "activating_lamports": 38787379922260,
+          "deactivating_lamports": 27880281134154,
+          "validator_count": 41
+        },
+        "SOLAYER_POOL": {
+          "active_lamports": 85557488701336,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 2
+        },
+        "STARKE_POOL": {
+          "active_lamports": 10906738228860,
+          "activating_lamports": 3778839553,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "STAR_POOL": {
+          "active_lamports": 256075379118,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 18
+        },
+        "STKE_POOL": {
+          "active_lamports": 539951824710047,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 75
+        },
+        "STRONGHOLD_POOL": {
+          "active_lamports": 41628362851141,
+          "activating_lamports": 1023405551,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "THETA_SOL": {
+          "active_lamports": 28078984700904,
+          "activating_lamports": 0,
+          "deactivating_lamports": 0,
+          "validator_count": 1
+        },
+        "VAULT_POOL": {
+          "active_lamports": 1322036369902170,
+          "activating_lamports": 13571490120378,
+          "deactivating_lamports": 13356090048234,
+          "validator_count": 149
+        },
+        "ZIPPY_STAKE": {
+          "active_lamports": 74759178408,
           "activating_lamports": 0,
           "deactivating_lamports": 0,
           "validator_count": 1

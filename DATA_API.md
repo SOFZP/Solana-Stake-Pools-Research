@@ -26,7 +26,7 @@ The `/v1/` prefix is a compatibility contract: fields may be added, but existing
 
 | Path | Refreshed | Cache-Control | Contents |
 | --- | --- | --- | --- |
-| `v1/mainnet-beta/live.json` | about every 20 minutes | `max-age=60` | The latest full snapshot (same schema as archived snapshots). |
+| `v1/mainnet-beta/live.json` | continuously during the epoch, after every published run | `max-age=60` | The latest full snapshot (same schema as archived snapshots). |
 | `v1/mainnet-beta/status.json` | after every pipeline run attempt | `max-age=30` | Pipeline health. Drive your own staleness checks from it. |
 | `v1/mainnet-beta/manifest.json` | after every archived snapshot | `max-age=60` | Index: latest snapshot URL, live/status URLs, one snapshot URL per past epoch. |
 | `v1/mainnet-beta/aggregated-history.json` | once per epoch | `max-age=300` | Compact epoch-by-epoch history used by the dashboard charts. |
@@ -56,7 +56,7 @@ Top-level keys of `live.json` and every archived snapshot:
 | Key | Contents |
 | --- | --- |
 | `metadata` | `timestamp_utc`, `epoch`, `epoch_completed_percent`, `cluster_name`. |
-| `script_info` | Run diagnostics: `run_mode` (`full` or `light`), `execution_time_seconds`, `total_validators_in_cluster`, `total_validators_processed_successfully`, `gpav2_fallback_count`, `withdraw_authority_cache`. |
+| `script_info` | Run diagnostics: `run_mode` (`full` or `light`), `execution_time_seconds`, `total_validators_in_cluster`, `total_validators_processed_successfully`, `gpav2_fallback_count`, `withdraw_authority_cache`, `checker_version` (since 6.0), `jito_metadata` (`status`: `ok`, `unavailable` or `skipped`; `validators`: entries loaded from the Jito API for this run). |
 | `pool_definitions` | The registry rows used for classification: `short_name`, `long_name`, `group`, `category`, `type`, `public_key`, `description`, `url`, `image`. |
 | `validators` | One entry per validator, see below. |
 
@@ -69,8 +69,9 @@ Each `validators[]` entry:
 | `aggregations.by_group` | Stake grouped by registry group: `name`, `active_lamports`, `activating_lamports`, `deactivating_lamports`, `count`, `percent`, `authority_keys`. |
 | `aggregations.by_pool`, `aggregations.by_category` | Same idea at pool and category granularity. |
 | `other_stake_account_keys` | Stake authorities that did not match any registry entry. |
+| `meta` | Validator metadata as of the snapshot (since checker 6.0, epoch 1042, 25 September 2026; absent in older snapshots): `commission` (inflation commission, percent), `version` (client version string), `delinquent` (bool), `credits`, `epoch_credits`, `skip_rate` (percent or null when the validator had no leader slots yet), `last_vote`, `root_slot`, `cli_activated_stake_lamports` (the stake figure reported by the cluster, a cross-check for `totals.total_active_lamports`), and `jito` - an object or `null` when the validator is unknown to the Jito network or the Jito API was unavailable for the run: `mev_commission_bps`, `priority_fee_commission_bps`, `running_jito`, `running_bam`, `bam_connection_rate`, `directed_stake_target`, `directed_stake_lamports`. |
 
-All amounts are lamports (integers, 1 SOL = 1e9 lamports). Within one epoch a validator's active stake is constant, so any two snapshots of the same epoch agree on `active_lamports` for every validator they both cover.
+All amounts are lamports (integers, 1 SOL = 1e9 lamports). Commissions in `meta` are percent (`commission`) or basis points (`mev_commission_bps`, `priority_fee_commission_bps`: 10000 = 100 percent). Within one epoch a validator's active stake is constant, so any two snapshots of the same epoch agree on `active_lamports` for every validator they both cover.
 
 ## Data quality guarantees
 
@@ -97,6 +98,13 @@ One validator by identity:
 ```
 curl -sL https://data.cryptovik.info/v1/mainnet-beta/live.json \
   | jq '.validators[] | select(.info.identity_pubkey == "IDENTITY_PUBKEY")'
+```
+
+Commission, MEV commission and client version of every validator (snapshots since epoch 1042):
+
+```
+curl -sL https://data.cryptovik.info/v1/mainnet-beta/live.json \
+  | jq -r '.validators[] | select(.meta != null) | [.info.name, .meta.commission, (.meta.jito.mev_commission_bps // "n/a"), .meta.version] | @tsv'
 ```
 
 Every archived snapshot of one epoch (canonical origin):

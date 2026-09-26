@@ -50,7 +50,7 @@ These are the primary tools developed from this research, now available for publ
 - [My Other Validator Scripts](#️-my-other-validator-scripts)
 - [Further Reading & Resources](#-further-reading--resources)
 - [Disclaimer](#️-disclaimer)
-- [Usage & Attribution](#-usage--attribution)
+- [License, Usage & Attribution](#-license-usage--attribution)
 
 ---
 
@@ -89,7 +89,7 @@ This repository also serves as a source for curated stake pool data.
     The master registry powering the dashboard and the CLI tool. One row per on-chain authority: ```short_name```, ```type```, ```group```, ```category```, ```public_key```, ```long_name```, ```description```, ```url```, ```image```.
 
 * **[On-Chain Stake Data Archive](https://github.com/SOFZP/Solana-Stake-Pools-Research/tree/main/stakepool-data/mainnet-beta)**
-    Historical on-chain data showing stake distribution across all validators in the ```mainnet-beta``` cluster. Live data refreshes about every 20 minutes; full snapshots are archived roughly every 2 hours and at the epoch boundary, epoch by epoch since epoch 820.
+    Historical on-chain data showing stake distribution across all validators in the ```mainnet-beta``` cluster. Live data refreshes continuously during the epoch; full snapshots are archived several times per epoch and at the epoch boundary, epoch by epoch since epoch 820.
 
 **Public JSON API:** the same data is served from `https://data.cryptovik.info/v1/` with a live endpoint, a machine-readable status file and immutable epoch archives. See [DATA_API.md](DATA_API.md) for the endpoint reference and [ARCHITECTURE.md](ARCHITECTURE.md) for how the pipeline works.
 
@@ -645,11 +645,12 @@ Community feedback and contributions are welcome!
 
 ---
 
-## 🧾 Usage & Attribution
+## 🧾 License, Usage & Attribution
 
-The information in this research is provided freely under an open model.  
-You are welcome to use, reference, or build upon this material in your own work, whether personal, educational, or professional.
+Everything in this repository - the epoch snapshots and the live data served from `data.cryptovik.info`, the stake pools registry (`stakepools_list.csv`), the aggregated history, the per-validator history files and the documentation - is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. Full text: [LICENSE](LICENSE), summary: https://creativecommons.org/licenses/by/4.0/
 
-If you find this research helpful and are using it in a **comprehensive way** (e.g. integrating into documentation, validator tooling, or your product), a visible reference or active link back to this repository is kindly appreciated.
+You may copy, redistribute, remix and build upon the data for any purpose, including commercially, as long as you give credit. **Please attribute to CryptoVik Validator** with a link to this repository or to the dashboard, and indicate if you changed the data. The validator tools listed above are separate repositories with their own (MIT) licenses.
+
+If you use this research in a **comprehensive way** (e.g. integrating into documentation, validator tooling, or your product), a visible reference or active link back to this repository is kindly appreciated.
 
 > Let's make validator knowledge transparent and accessible across Solana.

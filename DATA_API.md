@@ -1,38 +1,40 @@
-# CryptoVik Stake Pools Data API
+# StakeMap Data API
 
-Free, public, no-auth JSON data behind the [CryptoVik Stake Pools Dashboard](https://cryptovik.info/solana-stakepools-dashboard/).
-Stake distribution of the Solana mainnet validator set across stake pools, delegation programs, CEXes and other stakeholder groups, collected continuously since epoch 820.
+Free, public, no-auth JSON data behind [StakeMap](https://stakemap.info/), built and run by [CryptoVik](https://cryptovik.info/).
+Stake distribution of the Solana mainnet validator set across stake pools, delegation programs, CEXes and other stakeholder groups, collected continuously since epoch 820 (July 2025).
 
-If you build something with this data, please attribute **CryptoVik Validator**. See [Attribution](#attribution) for ready-made lines.
+If you build something with this data, please attribute **StakeMap by CryptoVik**. See [Attribution](#attribution) for ready-made lines.
 
 ## Attribution
 
-The data is free for any use, commercial included, as long as you attribute the source. A visible link is enough, no logo required:
+The data is licensed under CC BY 4.0: free for any use, commercial included, as long as you attribute the source. A visible link is enough, no logo required:
 
-- Text: `Data: CryptoVik Stake Pools Dashboard - https://cryptovik.info/solana-stakepools-dashboard/`
-- HTML: `<a href="https://cryptovik.info/solana-stakepools-dashboard/">Data: CryptoVik Stake Pools Dashboard</a>`
-- Research or media: cite "CryptoVik Validator, Solana Stake Pools Research" with the dashboard URL.
+- Text: `Data: StakeMap by CryptoVik - https://stakemap.info/`
+- HTML: `<a href="https://stakemap.info/">Data: StakeMap by CryptoVik</a>`
+- Research or media: `Data: StakeMap by CryptoVik, as of epoch N` with a link to https://stakemap.info/ or to this repository.
 
 ## Base URLs
 
 | Origin | Purpose |
 | --- | --- |
-| `https://data.cryptovik.info/v1/` | Fast CDN mirror. Live data and the whole archive. CORS enabled (GET/HEAD from any origin). |
-| `https://raw.githubusercontent.com/SOFZP/Solana-Stake-Pools-Research/main/stakepool-data/` | Canonical archive in git. Same epoch files, full history, diffable. |
+| `https://data.stakemap.info/v1/` | Fast CDN mirror. Live data and the whole archive. CORS enabled (GET/HEAD from any origin). |
+| `https://raw.githubusercontent.com/stakemap-sol/Solana-Stake-Pools-Research/main/stakepool-data/` | Canonical archive in git. Same epoch files, full history, diffable. |
+
+Earlier addresses keep working. `https://data.cryptovik.info/v1/` serves the same files as `data.stakemap.info`, and the raw path under the previous owner of this repository (`SOFZP`) still resolves. In `manifest.json` the snapshot URLs of epochs archived before the repository moved in October 2026 carry that earlier owner. New integrations should use the addresses in the table.
 
 The `/v1/` prefix is a compatibility contract: fields may be added, but existing fields and paths will not change or disappear. A breaking change would ship as `/v2/` while `/v1/` keeps serving.
 
 ## Endpoints
 
-| Path | Refreshed | Cache-Control | Contents |
+| Path (after `https://data.stakemap.info/`) | Refreshed | Cache-Control | Contents |
 | --- | --- | --- | --- |
 | `v1/mainnet-beta/live.json` | continuously during the epoch, after every published run | `max-age=60` | The latest full snapshot (same schema as archived snapshots). |
 | `v1/mainnet-beta/status.json` | after every pipeline run attempt | `max-age=30` | Pipeline health. Drive your own staleness checks from it. |
 | `v1/mainnet-beta/manifest.json` | after every archived snapshot | `max-age=60` | Index: latest snapshot URL, live/status URLs, one snapshot URL per past epoch. |
-| `v1/mainnet-beta/aggregated-history.json` | once per epoch | `max-age=300` | Compact epoch-by-epoch history used by the dashboard charts. |
+| `v1/mainnet-beta/aggregated-history.json` | once per epoch | `max-age=300` | Compact epoch-by-epoch history used by the StakeMap charts. |
 | `v1/mainnet-beta/<epoch>/<file>.json` | never (immutable) | `max-age=31536000, immutable` | Archived snapshots, several per epoch. Cache them forever. |
 | `v1/mainnet-beta/validators/index.json` | once per epoch | `max-age=300` | Every validator seen since epoch 820, active or gone: vote and identity keys, current and former names, first and last epoch, latest active stake and stake rank. |
-| `v1/mainnet-beta/validators/<vote_pubkey>.json` | once per epoch | `max-age=300` | One validator's history: an entry per finalized epoch with total stake, stake sources by registry group, stake rank and (since epoch 1042) commission, client version, delinquency and Jito fields. See [Per-validator history](#per-validator-history). |
+| `v1/mainnet-beta/validators/<vote_pubkey>.json` | once per epoch | `max-age=300` | One validator's history: an entry per finalized epoch with total stake, stake by registry group, stake rank and (since epoch 1042) commission, client version, delinquency and Jito fields. See [Per-validator history](#per-validator-history). |
 | `v1/registry/stakepools_list.csv` | with every archived snapshot (content changes only when the registry changes) | `max-age=60` | The curated registry of pools, programs and stakeholder groups the pipeline classifies against. |
 
 ## status.json
@@ -40,16 +42,16 @@ The `/v1/` prefix is a compatibility contract: fields may be added, but existing
 ```json
 {
   "cluster": "mainnet-beta",
-  "last_success_utc": "2026-08-22T10:41:03Z",
-  "last_attempt_utc": "2026-08-22T10:41:03Z",
+  "last_success_utc": "2026-10-10T07:36:59Z",
+  "last_attempt_utc": "2026-10-10T07:36:59Z",
   "consecutive_failures": 0,
-  "current_epoch": 1020,
-  "epoch_completed_percent": 55.1,
-  "expected_interval_seconds": 1200
+  "current_epoch": 1053,
+  "epoch_completed_percent": 64.48935185185185,
+  "expected_interval_seconds": 300
 }
 ```
 
-`expected_interval_seconds` is the advertised cadence. Recommended staleness rule (the dashboard uses exactly this): compute `age = now - last_success_utc`; treat data as delayed when `age > 3 * expected_interval_seconds`, as unavailable when `age > 12 * expected_interval_seconds` or `consecutive_failures >= 3`. Read the interval from the file instead of hardcoding it: backend cadence changes then require nothing on your side.
+`expected_interval_seconds` is the advertised cadence. Recommended staleness rule: compute `age = now - last_success_utc`; treat data as delayed when `age > 3 * expected_interval_seconds`, as unavailable when `age > 12 * expected_interval_seconds` or `consecutive_failures >= 3`. Read the interval from the file instead of hardcoding it: backend cadence changes then require nothing on your side. StakeMap applies this rule with minimum ages on top of it: active stake changes only at epoch boundaries, so a short delay matters little to a reader.
 
 ## Snapshot structure
 
@@ -58,7 +60,7 @@ Top-level keys of `live.json` and every archived snapshot:
 | Key | Contents |
 | --- | --- |
 | `metadata` | `timestamp_utc`, `epoch`, `epoch_completed_percent`, `cluster_name`. |
-| `script_info` | Run diagnostics: `run_mode` (`full` or `light`), `execution_time_seconds`, `total_validators_in_cluster`, `total_validators_processed_successfully`, `gpav2_fallback_count`, `withdraw_authority_cache`, `checker_version` (since 6.0), `jito_metadata` (`status`: `ok`, `cached` = the Jito API failed and the last good response, at most 24 hours old, was reused, `unavailable` or `skipped`; `validators`: entries loaded; `cache_age_seconds`: age of the reused copy, null when fresh), `validator_age_registry` (since 6.2: `status` ok or missing, `updated_epoch`, `validators`). |
+| `script_info` | Run diagnostics: `run_mode` (`full` or `light`), `execution_time_seconds`, `total_validators_in_cluster`, `total_validators_processed_successfully`, `gpav2_fallback_count`, `withdraw_authority_cache`, `checker_version` (since 6.0), `jito_metadata` (`status`: `ok`, `cached` = the Jito API failed and the last good response, at most 24 hours old, was reused, `unavailable` or `skipped`; `validators`: entries loaded; `cache_age_seconds`: age of the reused copy, null when fresh), `validator_age_registry` (since 6.2: `status` ok or missing, `updated_epoch`, `validators`), `engine` (since checker 6.4, epoch 1049, 4 October 2026: diagnostics of the stake engine that reads every stake account of the cluster in one pass - `status` (`ok`, `failed`, `disabled`, `missing` or `skipped`), `served` (validators taken from that pass), `cli_fallback` (validators read one by one through the Solana CLI instead) and, when the pass ran, `unreconciled` with `unreconciled_votes` (validators whose stake from the pass did not match the `activatedStake` the cluster reports) and counters of the pass such as `accounts`, `stake_accounts`, `pages` and `seconds`). |
 | `pool_definitions` | The registry rows used for classification: `short_name`, `long_name`, `group`, `category`, `type`, `public_key`, `description`, `url`, `image`. |
 | `validators` | One entry per validator, see below. |
 
@@ -77,7 +79,7 @@ All amounts are lamports (integers, 1 SOL = 1e9 lamports). Commissions in `meta`
 
 ## Per-validator history
 
-`v1/mainnet-beta/validators/<vote_pubkey>.json` is rebuilt once per epoch from the finalized snapshot of that epoch (the same snapshot the aggregated history uses), so the current epoch is not in it yet: take the current state from `live.json`. Stake sources are keyed by the CURRENT registry group, also for old epochs (retroactive regrouping: when a pool is renamed in the registry, the whole history follows).
+`v1/mainnet-beta/validators/<vote_pubkey>.json` is rebuilt once per epoch from the finalized snapshot of that epoch (the same snapshot the aggregated history uses), so the current epoch is not in it yet: take the current state from `live.json`. Stake is keyed by the CURRENT registry group, also for old epochs (retroactive regrouping: when a pool is renamed in the registry, the whole history follows).
 
 | Key | Contents |
 | --- | --- |
@@ -90,59 +92,59 @@ All amounts are lamports (integers, 1 SOL = 1e9 lamports). Commissions in `meta`
 
 ## Data quality guarantees
 
-A snapshot is published only if it passes all pipeline guards: at least 95 percent of validators processed, epoch consistent across the whole run, and total active stake not dropping more than 2 percent against the last published snapshot (which, within an epoch, would only mean missing validators, not market movement). Validators that hit RPC deprioritization are re-fetched via paginated `getProgramAccountsV2` instead of being skipped. In short: what is published is complete or it is not published.
+A snapshot is published only if it passes all pipeline guards: at least 95 percent of validators processed, epoch consistent across the whole run, and total active stake not dropping more than 2 percent against the last published snapshot (which, within an epoch, would only mean missing validators, not market movement). Since checker 6.4 every stake account of the cluster is read in one pass and each validator is reconciled with the `activatedStake` the cluster itself reports. A validator that does not reconcile is read again individually instead of being skipped or published unverified. In short: what is published is complete or it is not published.
 
 ## Examples
 
 Latest total active stake in SOL:
 
 ```
-curl -sL https://data.cryptovik.info/v1/mainnet-beta/live.json \
+curl -sL https://data.stakemap.info/v1/mainnet-beta/live.json \
   | jq '[.validators[].totals.total_active_lamports] | add / 1e9'
 ```
 
 Freshness check:
 
 ```
-curl -sL https://data.cryptovik.info/v1/mainnet-beta/status.json \
+curl -sL https://data.stakemap.info/v1/mainnet-beta/status.json \
   | jq '{age_s: (now - (.last_success_utc | fromdateiso8601)), expected: .expected_interval_seconds, fails: .consecutive_failures}'
 ```
 
 One validator by identity:
 
 ```
-curl -sL https://data.cryptovik.info/v1/mainnet-beta/live.json \
+curl -sL https://data.stakemap.info/v1/mainnet-beta/live.json \
   | jq '.validators[] | select(.info.identity_pubkey == "IDENTITY_PUBKEY")'
 ```
 
 Commission, MEV commission and client version of every validator (snapshots since epoch 1042):
 
 ```
-curl -sL https://data.cryptovik.info/v1/mainnet-beta/live.json \
+curl -sL https://data.stakemap.info/v1/mainnet-beta/live.json \
   | jq -r '.validators[] | select(.meta != null) | [.info.name, .meta.commission, (.meta.jito.mev_commission_bps // "n/a"), .meta.version] | @tsv'
 ```
 
 Stake from one pool on one validator, epoch by epoch (lamports):
 
 ```
-curl -sL https://data.cryptovik.info/v1/mainnet-beta/validators/VOTE_PUBKEY.json \
+curl -sL https://data.stakemap.info/v1/mainnet-beta/validators/VOTE_PUBKEY.json \
   | jq -r '.epochs[] | [.epoch, .stake_rank, (.groups.JITO_POOL[0] // 0)] | @tsv'
 ```
 
 Find a validator by any name it ever had:
 
 ```
-curl -sL https://data.cryptovik.info/v1/mainnet-beta/validators/index.json \
+curl -sL https://data.stakemap.info/v1/mainnet-beta/validators/index.json \
   | jq '.validators[] | select((.name // "") + (.aliases | join(" ")) | test("cryptovik"; "i"))'
 ```
 
 Every archived snapshot of one epoch (canonical origin):
 
 ```
-curl -sL https://api.github.com/repos/SOFZP/Solana-Stake-Pools-Research/contents/stakepool-data/mainnet-beta/1019 \
+curl -sL https://api.github.com/repos/stakemap-sol/Solana-Stake-Pools-Research/contents/stakepool-data/mainnet-beta/1019 \
   | jq -r '.[].download_url'
 ```
 
 ## Fair use
 
-No API key is required and there are no hard limits today; help us keep it that way. Epoch files are immutable, fetch each once and cache it forever. Polling `live.json` more often than once a minute or `status.json` more often than every 30 seconds buys you nothing because of the cache headers. We reserve the right to introduce limits if usage patterns force it. If you plan sustained heavy usage, say hi first: [cryptovik.info](https://cryptovik.info).
+No API key is required and there are no hard limits today; help us keep it that way. Epoch files are immutable, fetch each once and cache it forever. Polling `live.json` more often than once a minute or `status.json` more often than every 30 seconds buys you nothing because of the cache headers. We reserve the right to introduce limits if usage patterns force it. If you plan sustained heavy usage, say hi first: hello@stakemap.info or [@stakemap_sol](https://x.com/stakemap_sol).

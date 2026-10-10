@@ -2,29 +2,31 @@
 
 # 🔥 Solana Stake Pools Research (2025-2026)
 
-This repository provides a structured and technical overview of major Solana stake pools and delegation programs as of August 2026. It also includes **live tools and a dashboard** to help validators check their eligibility and performance across these pools.
+This repository provides a structured and technical overview of major Solana stake pools and delegation programs as of August 2026. It is also the open dataset behind **[StakeMap](https://stakemap.info/)**, which shows whose stake is where on Solana, and it links to **live tools** that help validators check their eligibility and performance across these pools.
 
-The detailed notes below cover pools that have a formal, published path for validators to join. The underlying registry tracks 100+ stake groups in total - CEX pools, DEX and DeFi pools, locked stakes, Foundation wallets and more - and all of them are visible on the dashboard.
+The detailed notes below cover pools that have a formal, published path for validators to join. The underlying registry tracks 100+ entries in total - CEX pools, DEX and DeFi pools, locked stakes, Foundation wallets and more - and all of them are visible on StakeMap.
 
 The research is intended for validator operators, contributors, and tooling developers who want to understand delegation criteria, performance benchmarks, and integration points with each pool.
 
+Built and run by [CryptoVik](https://cryptovik.info/), an independent Solana validator.
+
 ---
 
-## 🚀 Live Tools & Dashboards
+## 🚀 StakeMap & Live Tools
 
 These are the primary tools developed from this research, now available for public use.
 
-* ### 📊 **[Solana Stake Pools Dashboard](https://cryptovik.info/solana-stakepools-dashboard/)**
-    The main result of this project. A live, network-wide view of Solana stake flows: per-pool, per-validator, per-epoch granularity since epoch 820, live data refreshed about every 20 minutes, with full snapshots archived roughly every 2 hours and at the epoch boundary. Every pool section below links straight to its live page.
+* ### 🗺️ **[StakeMap](https://stakemap.info/)**
+    The main result of this project. StakeMap shows whose stake is where on Solana: a live, network-wide view of stake flows with per-pool, per-validator and per-epoch history since epoch 820 (July 2025). Live data is refreshed continuously throughout the epoch, and complete snapshots are archived several times per epoch and at every epoch boundary. Every pool section below links straight to its live page. Until October 2026 StakeMap was known as the CryptoVik StakePools Dashboard, and its old links redirect to the new address.
 
 * ### ⚙️ **[Validator Stake Pools Checker (CLI)](https://github.com/SOFZP/Solana-Stake-Pools-Checker)**
-    A command-line script to check a specific validator's Stake Set for various stake pools. Ideal for automated checks and integrations, with support for JSON output.
+    A command-line script to check a specific validator's Stake Set for various stake pools. Ideal for automated checks and integrations, with support for JSON output. The data pipeline behind StakeMap grew out of this script.
 
 ---
 
 ## 📚 Table of Contents
 
-- [Live Tools & Dashboards](#-live-tools--dashboards)
+- [StakeMap & Live Tools](#-stakemap--live-tools)
 - [Program Status at a Glance](#-program-status-at-a-glance)
 - [Data & Resources](#️-data--resources)
 - [Notes on Stake Pools](#-notes-on-stake-pools)
@@ -56,28 +58,28 @@ These are the primary tools developed from this research, now available for publ
 
 ## 🚦 Program Status at a Glance
 
-Statuses reflect what is actually observable on-chain (see the dashboard links) as of August 2026, not just what the docs promise.
+Statuses reflect what is actually observable on-chain (see the StakeMap links) as of August 2026, not just what the docs promise.
 
 | Pool | Type | Status | Entry gate | Live data |
 |---|---|---|---|---|
-| [Jito](#-jito-stake-pool) | Performance | Active | Mandatory BAM, 4-tier ranking | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=JITO_POOL) |
-| [Shinobi](#-shinobi-performance-pool) | Performance | Active | Top score: latency, skip rate, voting | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=SHINOBI_POOL) |
-| [Edgevana](#-edgevana-liquid-staking) | Performance | Rules active, pool depleted | Edgevana hosting, V3 ranking | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=EDGEVANA) |
-| [JPool](#-jpool-delegation-program) | Community | Active | Bond + 3 cohorts (DS / CG / PF) | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=JPOOL_POOL) |
-| [The Vault](#-vault-stake-pool) | Community | Active | Validator Board approval | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=VAULT_POOL) |
-| [Blazestake](#-blazestake) | Community | Active | Verified Validators program | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=BLAZESTAKE) |
-| [Phase](#-phase-delegation-ex-aeropool) | Community | Active | IPS score, quarterly updates | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=PHASE_POOL) |
-| [DynoSOL](#-dynosol) | Community | Active | Application + track record | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=DYNO_POOL) |
-| [Jagpool](#-jagpool) | Community | Active | LATAM / SG / ZA regions | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=JAG_POOL) |
-| [Definity](#-definity-staked-sol) | Community | Active | Operator in focus regions | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=DEFIN_POOL) |
-| [DoubleZero](#-doublezero-delegation-program) | Delegation program | Active, scaled down | Shred publishing to Edge | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=DOUBLEZERO) |
-| [Marinade (PSR)](#-marinade-psr-program) | Paid (bonds + bids) | Active | Bond + SAM bid | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=MARINADE) |
-| [Marinade Select](#-marinade-select) | Institutional | Active | KYB + bond + vetting | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=MAR_SELECT) |
-| [SOL Strategies](#-sol-strategies-stkesol) | Performance | Active | Algorithmic (Wiz Score) | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=STKE_POOL) |
-| [StarPool](#-starpool) | Community | Active (small) | Region + size + Jito MEV | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=STAR_POOL) |
-| [Layer33](#-layer33-indiesol) | Community | Active | Indie coalition membership | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=LAYER33_POOL) |
-| [Firedancer](#-firedancer-delegation-program) | Delegation program | Wound down | - | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=FIREDANCER) |
-| [SharkPool](#-sharkpool) | Community | Dormant | U.S. universities | [Dashboard](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=SHARK_POOL) |
+| [Jito](#-jito-stake-pool) | Performance | Active | Mandatory BAM, 4-tier ranking | [StakeMap](https://stakemap.info/?pool=JITO_POOL) |
+| [Shinobi](#-shinobi-performance-pool) | Performance | Active | Top score: latency, skip rate, voting | [StakeMap](https://stakemap.info/?pool=SHINOBI_POOL) |
+| [Edgevana](#-edgevana-liquid-staking) | Performance | Rules active, pool depleted | Edgevana hosting, V3 ranking | [StakeMap](https://stakemap.info/?pool=EDGEVANA) |
+| [JPool](#-jpool-delegation-program) | Community | Active | Bond + 3 cohorts (DS / CG / PF) | [StakeMap](https://stakemap.info/?pool=JPOOL_POOL) |
+| [The Vault](#-vault-stake-pool) | Community | Active | Validator Board approval | [StakeMap](https://stakemap.info/?pool=VAULT_POOL) |
+| [Blazestake](#-blazestake) | Community | Active | Verified Validators program | [StakeMap](https://stakemap.info/?pool=BLAZESTAKE) |
+| [Phase](#-phase-delegation-ex-aeropool) | Community | Active | IPS score, quarterly updates | [StakeMap](https://stakemap.info/?pool=PHASE_POOL) |
+| [DynoSOL](#-dynosol) | Community | Active | Application + track record | [StakeMap](https://stakemap.info/?pool=DYNO_POOL) |
+| [Jagpool](#-jagpool) | Community | Active | LATAM / SG / ZA regions | [StakeMap](https://stakemap.info/?pool=JAG_POOL) |
+| [Definity](#-definity-staked-sol) | Community | Active | Operator in focus regions | [StakeMap](https://stakemap.info/?pool=DEFIN_POOL) |
+| [DoubleZero](#-doublezero-delegation-program) | Delegation program | Active, scaled down | Shred publishing to Edge | [StakeMap](https://stakemap.info/?pool=DOUBLEZERO) |
+| [Marinade (PSR)](#-marinade-psr-program) | Paid (bonds + bids) | Active | Bond + SAM bid | [StakeMap](https://stakemap.info/?pool=MARINADE) |
+| [Marinade Select](#-marinade-select) | Institutional | Active | KYB + bond + vetting | [StakeMap](https://stakemap.info/?pool=MAR_SELECT) |
+| [SOL Strategies](#-sol-strategies-stkesol) | Performance | Active | Algorithmic (Wiz Score) | [StakeMap](https://stakemap.info/?pool=STKE_POOL) |
+| [StarPool](#-starpool) | Community | Active (small) | Region + size + Jito MEV | [StakeMap](https://stakemap.info/?pool=STAR_POOL) |
+| [Layer33](#-layer33-indiesol) | Community | Active | Indie coalition membership | [StakeMap](https://stakemap.info/?pool=LAYER33_POOL) |
+| [Firedancer](#-firedancer-delegation-program) | Delegation program | Wound down | - | [StakeMap](https://stakemap.info/?pool=FIREDANCER) |
+| [SharkPool](#-sharkpool) | Community | Dormant | U.S. universities | [StakeMap](https://stakemap.info/?pool=SHARK_POOL) |
 
 ---
 
@@ -85,22 +87,22 @@ Statuses reflect what is actually observable on-chain (see the dashboard links) 
 
 This repository also serves as a source for curated stake pool data.
 
-* **[Stake Pools Registry (CSV)](https://github.com/SOFZP/Solana-Stake-Pools-Research/blob/main/stakepools_list.csv)**
-    The master registry powering the dashboard and the CLI tool. One row per on-chain authority: ```short_name```, ```type```, ```group```, ```category```, ```public_key```, ```long_name```, ```description```, ```url```, ```image```.
+* **[Stake Pools Registry (CSV)](https://github.com/stakemap-sol/Solana-Stake-Pools-Research/blob/main/stakepools_list.csv)**
+    The master registry powering StakeMap and the CLI tool. One row per on-chain authority: ```short_name```, ```type```, ```group```, ```category```, ```public_key```, ```long_name```, ```description```, ```url```, ```image```.
 
-* **[On-Chain Stake Data Archive](https://github.com/SOFZP/Solana-Stake-Pools-Research/tree/main/stakepool-data/mainnet-beta)**
+* **[On-Chain Stake Data Archive](https://github.com/stakemap-sol/Solana-Stake-Pools-Research/tree/main/stakepool-data/mainnet-beta)**
     Historical on-chain data showing stake distribution across all validators in the ```mainnet-beta``` cluster. Live data refreshes continuously during the epoch; full snapshots are archived several times per epoch and at the epoch boundary, epoch by epoch since epoch 820.
 
-**Public JSON API:** the same data is served from `https://data.cryptovik.info/v1/` with a live endpoint, a machine-readable status file and immutable epoch archives. See [DATA_API.md](DATA_API.md) for the endpoint reference and [ARCHITECTURE.md](ARCHITECTURE.md) for how the pipeline works.
+**Public JSON API:** the same data is served from `https://data.stakemap.info/v1/` with a live endpoint, a machine-readable status file and immutable epoch archives. See [DATA_API.md](DATA_API.md) for the endpoint reference and [ARCHITECTURE.md](ARCHITECTURE.md) for how the pipeline works.
 
 ---
 
 ## 📘 Notes on Stake Pools
 
--   **Scope**: this document describes pools and programs with formal, published rules that a validator can act on to join. Discretionary stakes (for example the Solana Foundation Incentive wallet) have no such rules and are tracked only on the dashboard.
+-   **Scope**: this document describes pools and programs with formal, published rules that a validator can act on to join. Discretionary stakes (for example the Solana Foundation Incentive wallet) have no such rules and are tracked only on StakeMap.
 -   **SFDP** (Solana Foundation Delegation Program) is intentionally not detailed here - it is documented exhaustively at [solana.org/delegation-program](https://solana.org/delegation-program).
 -   **Recommended Commission** refers to the typical commission level expected by the pool to qualify for delegation. It is not always a hard requirement but reflects what is practically needed to receive stake.
--   **Status** lines reflect on-chain stake observable on the dashboard as of August 2026. Rules on paper and stake on chain do not always match - both are noted where they differ.
+-   **Status** lines reflect on-chain stake observable on StakeMap as of August 2026. Rules on paper and stake on chain do not always match - both are noted where they differ.
 -   All data was collected from **publicly available sources** including official documentation, stake pool dashboards, APIs, and Solana community forums.
 -   This document is for **informational purposes only**. Interacting with any stake pool or program is your own responsibility and should be done after reviewing their official policies and terms. Do your own research (DYOR).
 
@@ -113,7 +115,7 @@ This repository also serves as a source for curated stake pool data.
 **Website**: [jito.network](https://www.jito.network/stakenet/steward/)  
 **Docs**: [Delegation criteria](https://www.jito.network/docs/jitosol/jitosol-liquid-staking/stake-pool-operations/delegation-criteria/) | [Steward overview](https://www.jito.network/docs/stakenet/jito-steward/program-overview/) | [Scoring system](https://www.jito.network/docs/stakenet/jito-steward/validators/scoring-system/)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Jito4APyf642JPZPx3hGc6WWJ8zPKtRbRs4P815Awbb)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=JITO_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=JITO_POOL)  
 **Delegation Frequency**: continuous steward cycles of ~10 epochs; redistribution toward new targets is gradual and takes multiple cycles  
 **Recommended Commission**: 0% inflation / lower MEV always ranks higher; in practice up to 5% inflation / 10% MEV currently passes while the BAM validator set is undersubscribed  
 **Blacklist Policy**: subject to DAO vote; instant unstaking on commission rugs, heavy delinquency, or blacklisting  
@@ -143,7 +145,7 @@ https://kobe.mainnet.jito.network/api/v1/steward_events?limit=10000&event_type=S
 **Status**: Active.  
 **Website**: [xshin.fi](https://xshin.fi/#Validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/spp1mo6shdcrRyqDK2zdurJ8H5uttZE6H6oVjHxN1QN)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=SHINOBI_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=SHINOBI_POOL)  
 **Delegation Frequency**: every epoch, in the last ~20 minutes  
 **Recommended Commission**: unspecified  
 **Blacklist Policy**: manual, maintained by founder (Zantetsu); includes SFDP exclusion but may be appealed directly  
@@ -169,12 +171,12 @@ https://github.com/1000xsh/xshin-data
 <!-- pool:EDGEVANA:start -->
 ## 💻 Edgevana Liquid Staking
 
-**Status**: Delegation rules (V3) still run, but the pool was almost fully unstaked in 2026. Current pool stake is minimal and it is unclear whether it will be refilled - see the live curve on the dashboard.  
+**Status**: Delegation rules (V3) still run, but the pool was almost fully unstaked in 2026. Current pool stake is minimal and it is unclear whether it will be refilled - see the live curve on StakeMap.  
 **Website**: [stake.edgevana.com](https://stake.edgevana.com/validators)  
 **Docs**: [Delegation strategy algorithm (V3)](https://stake.edgevana.com/docs/validators/delegation-strategy-algorithm)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/edgejNWAqkePLpi5sHRxT9vHi7u3kSHP9cocABPKiWZ)  
 **Discord**: [Join](https://discord.gg/edgevana)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=EDGEVANA)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=EDGEVANA)  
 **Delegation Frequency**: every epoch  
 **Recommended Commission**: up to 5% inflation / 10% MEV at no penalty (averaged over 100 epochs)  
 **Blacklist Policy**: validators proven to engage in sandwiching or other malicious MEV behavior  
@@ -203,7 +205,7 @@ https://api.stake.edgevana.com/api/v2/scores
 **Docs**: [docs.jpool.one](https://docs.jpool.one/) | [Community Good](https://docs.jpool.one/delegation-strategy/community-good)  
 **Live slots board**: [app.jpool.one/delegation/slots](https://app.jpool.one/delegation/slots) - who currently holds a delegation seat in each cohort (DS / CG / PF)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/CtMyWsrUtAwXWiGr9WjHT5fC3p3fgV8cyGpLTo2LJzG1)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=JPOOL_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=JPOOL_POOL)  
 **Delegation Frequency**: removals checked every epoch; additions and full redistribution every 5 epochs; a 1% reserve buffers large withdrawals  
 **Recommended Commission**: inflation and MEV commission at or under the threshold (currently 10%); lower fees rank higher within the performance slots  
 **Blacklist Policy**: internal and external block lists (including Solana Foundation and Jito Foundation lists); suspicious behavior flags  
@@ -248,7 +250,7 @@ The two documented APIs expose more than these legacy routes - check the Swagger
 **Docs**: [Application process](https://docs.thevault.finance/delegation/validator-application-process) | [Delegation FAQs](https://docs.thevault.finance/delegation/delegation-faqs)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Fu9BYC6tWBo1KMKaP3CFoKfRhqv9akmy3DuYwnCyWiyC)  
 **Twitter**: [x.com/thevaultfinance](https://x.com/thevaultfinance)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=VAULT_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=VAULT_POOL)  
 **Delegation Frequency**: every epoch  
 **Recommended Commission**: up to 5% inflation / 10% MEV; **0% inflation is required to compete for Elite Performance**  
 **Blacklist Policy**: misbehavior such as sandwiching, ignoring governance (e.g. SIMD votes), or inactivity  
@@ -281,7 +283,7 @@ https://raw.githubusercontent.com/SolanaVault/stake-as-a-service-data/refs/heads
 **Website**: [stake.solblaze.org](https://stake.solblaze.org/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/stk9ApL5HeVAwPLr3TLhDXdZS8ptVu7zp6ov8HFDuMi)  
 **Twitter**: [x.com/solblaze_org](https://x.com/solblaze_org)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=BLAZESTAKE)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=BLAZESTAKE)  
 **Delegation Frequency**: every epoch  
 **Recommended Commission**: 5% inflation / 10% MEV; 0% commission validators receive roughly double the Verified allocation (3,000+ SOL vs 1,500+ SOL)  
 **Blacklist Policy**: sybil operators are filtered out during Verified Validators review  
@@ -313,7 +315,7 @@ https://stake.solblaze.org/api/v1/cls_boost?validator=<VOTE_ACCOUNT>
 **Docs**: [What is IPS?](https://phase.cc/delegation/ips)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/aero2ePURjuEgLKTzcUmF6RypBncBGd7pMUYCoSsVJ6)  
 **Twitter**: [@phase_](https://x.com/phase_)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=PHASE_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=PHASE_POOL)  
 **Delegation Frequency**: unspecified; contribution reviews run quarterly  
 **Recommended Commission**: unspecified (allocation is need- and contribution-driven, not fee-driven)  
 **Blacklist Policy**: missing two consecutive contribution updates removes the validator from the program  
@@ -341,7 +343,7 @@ https://api.phase.cc/api/validators/stats
 **Docs**: [docs.dynosol.io](https://docs.dynosol.io)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/DpooSqZRL3qCmiq82YyB4zWmLfH3iEqx2gy8f2B6zjru)  
 **Twitter**: [@DynoSOLPool](https://x.com/DynoSOLPool)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=DYNO_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=DYNO_POOL)  
 **Delegation Frequency**: likely every epoch  
 **Recommended Commission**: 5% inflation / 10% MEV  
 **Blacklist Policy**:
@@ -368,7 +370,7 @@ Not available. Participant list not available on site.
 **Website**: [jagpool.xyz](https://www.jagpool.xyz/pool)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/jagEdDepWUgexiu4jxojcRWcVKKwFqgZBBuAoGu2BxM)  
 **Twitter**: [@JagPool_xyz](https://x.com/JagPool_xyz)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=JAG_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=JAG_POOL)  
 **Delegation Frequency**: every 3 epochs scoring cycle  
 **Recommended Commission**: 5% inflation / 10% MEV  
 **Blacklist Policy**:
@@ -400,7 +402,7 @@ Not available. Validator list viewable at: https://www.jagpool.xyz/pool
 **Website**: [definity.finance/validators](https://www.definity.finance/validators)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/Bvbu55B991evqqhLtKcyTZjzQ4EQzRUwtf9T4CcpMmPL)  
 **Twitter**: [@realdefinity](https://x.com/realdefinity)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=DEFIN_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=DEFIN_POOL)  
 **Delegation Frequency**: every epoch (rebalanced)  
 **Recommended Commission**: hard caps - up to 5% inflation and up to 10% MEV (the exact boundary passes, 5.01% or 10.01% rejects)  
 **Blacklist Policy**: not published as a separate list; removal from SFDP for cause disqualifies  
@@ -429,7 +431,7 @@ Not available.
 **Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/3fV1sdGeXaNEZj6EPDTpub82pYxcRXwt2oie6jkSzeWi)  
 **Discord**: [Join](https://discord.com/invite/doublezerotech)  
 **Twitter**: [x.com/doublezero](https://x.com/doublezero)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=DOUBLEZERO)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=DOUBLEZERO)  
 **Network fee**: the initial flat 5% fee on block rewards and priority fees (epochs 859-938) was **removed as of epoch 939** - there is currently no DoubleZero network fee  
 **Validator requirements**:
 - Connect the validator to **DoubleZero mainnet-beta** and **publish shreds to multicast**. Publishing is not enabled by default, and validators that connect but do not publish shreds are **not eligible for any delegation**
@@ -450,7 +452,7 @@ Not available.
 **Status**: Active.  
 **Website**: [psr.marinade.finance](https://psr.marinade.finance)  
 **Solana Compass Pool Page**: [View](https://solanacompass.com/stake-pools/marinade)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=MARINADE)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=MARINADE)  
 **Delegation Frequency**: every epoch  
 **Recommended Commission**: flexible; any value allowed - the market decides through bids  
 **Blacklist Policy**: delegation is algorithmic, but the DAO can exclude sandwichers  
@@ -480,7 +482,7 @@ https://validators-api.marinade.finance/reports/staking
 **Website**: [marinade.finance/native-staking/marinade-select](https://marinade.finance/native-staking/marinade-select)  
 **Docs**: [Marinade Select overview](https://docs.marinade.finance/marinade-protocol/protocol-overview/marinade-select)  
 **Stake distribution**: [select.marinade.finance](https://select.marinade.finance)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=MAR_SELECT)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=MAR_SELECT)  
 **Delegation Frequency**: rebalanced over time to keep allocations consistent across a limited validator set  
 **Recommended Commission**: unspecified; selection is compliance- and quality-driven  
 **Blacklist Policy**: non-compliance can lead to removal from the set and loss of bond funds  
@@ -504,7 +506,7 @@ Not available. Stake distribution is monitored at [select.marinade.finance](http
 **Website:** [solstrategies.io](https://solstrategies.io)  
 **Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/StKeDUdSu7jMSnPJ1MPqDnk3RdEwD2QbJaisHMebGhw)  
 **Blog Announcement:** [Everything is liquid: SOL Strategies' new liquid staking solution - STKESOL](https://solstrategies.io/blog/everything-is-liquid-sol-strategies-new-liquid-staking-solution-stkesol)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=STKE_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=STKE_POOL)  
 **Delegation Frequency:** not specified (algorithmic delegation using the Stakewiz Wiz Score with a 30-day mean)  
 **Recommended Commission:** unspecified (selection is based on a network-health focused score, not solely APY or commission)  
 **Blacklist Policy:** not specified  
@@ -532,7 +534,7 @@ https://api.stakewiz.com/wiz_score
 
 **Status**: Active. Early-stage, small pool at the beginning of growth.  
 **Website**: [starpool.global](https://starpool.global) | [App](https://starpool.global/app) | [Docs](https://starpool.global/docs/) | [Strategy](https://starpool.global/docs/strategy.html)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=STAR_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=STAR_POOL)  
 **Focus**: advance Solana's decentralization by delegating stake to underrepresented validators across Africa, Latin America, Asia, Canada, and beyond  
 **Delegation Frequency**: rebalanced every two weeks (following the next Wednesday epoch)  
 **Recommended Commission**: validator commission <= 5% over the last 90 days; Jito MEV required  
@@ -549,7 +551,7 @@ https://api.stakewiz.com/wiz_score
 
 **Status**: Active.  
 **Website**: [layer33.com](https://www.layer33.com/) | [Validators](https://www.layer33.com/#validators) | [Leaderboard](https://www.layer33.com/#leaderboard)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=LAYER33_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=LAYER33_POOL)  
 **Focus**: a coalition of independent Solana validators (launched around Breakpoint 2025) with the mission of keeping at least **33% of network stake** with independent operators  
 **Requirements:**
 - Membership in the coalition: independent, value-contributing operators free from institutional or VC funding
@@ -564,7 +566,7 @@ Not available. Member validators and stake distribution at [layer33.com/#validat
 
 ## 📦 Dormant and Wound-Down Programs
 
-These programs no longer delegate meaningful stake. They are kept here for reference and history - their stake curves are still visible on the dashboard.
+These programs no longer delegate meaningful stake. They are kept here for reference and history - their stake curves are still visible on StakeMap.
 
 <!-- pool:FIREDANCER:start -->
 ### 🔥 Firedancer Delegation Program
@@ -572,12 +574,12 @@ These programs no longer delegate meaningful stake. They are kept here for refer
 **Status**: Wound down. The program (introduced June 2025: active SFDP validators with 50k+ SOL running the Firedancer client) began withdrawing delegations in October 2025 in the order they were granted, and the delegated stake is now gone. The team noted it may reintroduce targeted delegation windows for major features or high-risk transitions.  
 **Website**: [delegation.firedancer.io](https://delegation.firedancer.io/delegation-program)  
 **Solscan**: [Stake Accounts 1](https://solscan.io/account/8fxe1qGoDVLtqe9PAFyV4kR6zryTDyGQYb9AZQVUCvpM#stakeAccounts) | [Stake Accounts 2](https://solscan.io/account/AjLzAtJHDVQ4c2WMnSXt94a5BNt4CorH63af2uEmgkyF#stakeAccounts)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=FIREDANCER)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=FIREDANCER)  
 **References**:
 - Winding down announcement (Sep 20, 2025): https://delegation.firedancer.io/blog/winding-down-delegation-program
 - Introducing the program (Jun 9, 2025): https://delegation.firedancer.io/blog/introducing-the-firedancer-delegation-program
 
-Note: the Foundation wallet that seeded the initial Firedancer operators is a separate, discretionary stake (no formal rules) - it is tracked on the dashboard as [Solana Foundation Incentive Stake](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=SF_INCENTIVE).
+Note: the Foundation wallet that seeded the initial Firedancer operators is a separate, discretionary stake (no formal rules) - it is tracked on StakeMap as [Solana Foundation Incentive Stake](https://stakemap.info/?pool=SF_INCENTIVE).
 <!-- pool:FIREDANCER:end -->
 
 ---
@@ -587,7 +589,7 @@ Note: the Foundation wallet that seeded the initial Firedancer operators is a se
 
 **Status**: Dormant. The pool's stake was withdrawn in 2026 and it currently delegates almost nothing.  
 **Solana Compass Pool Page:** [View](https://solanacompass.com/stake-pools/HQLwnQJFH7t9nBTP4vbdW4eHy62aecfDnj8te8VzqkFL)  
-**Dashboard**: [Live stake flows](https://cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category&pool=SHARK_POOL)  
+**StakeMap**: [Live stake flows](https://stakemap.info/?pool=SHARK_POOL)  
 **Focus**: stake allocation to validators run in partnership with U.S. universities (launched with about 20 schools including Princeton and UPenn); SharkLabs funded initial nodes, trained student teams, then transitioned operations to campus groups  
 **Notes**: delegation criteria were never fully standardized in public docs  
 **Useful links**:
@@ -603,7 +605,7 @@ A collection of other custom tools created to support validator operations.
 
 ### ✅ Active Projects
 
--   🔍 **[CVK - See Your Stake v3.0](https://github.com/SOFZP/CVK-See-Your-Stake-v3.0)** Display all stake accounts for your validator with aggregation by source, totals by status (active, activating, deactivating), and interactive sorting.
+-   🔍 **[CVK - See Your Stake v3.0](https://github.com/SOFZP/CVK-See-Your-Stake-v3.0)** Display all stake accounts for your validator with aggregation by authority, totals by status (active, activating, deactivating), and interactive sorting.
 
 -   🚨 **[Solana Delinquency Alert Bot](https://github.com/SOFZP/Solana-Delinquency-Alert-Bot)** Lightweight Bash bot that tracks validator delinquency and sends instant Telegram alerts. Configurable for any number of validators.
 
@@ -627,7 +629,7 @@ A collection of other custom tools created to support validator operations.
 -   [📈 Stakewiz - Validator Scoreboard](https://stakewiz.com)
 -   [🔝 Topvalidators Leaderboard](https://topvalidators.app)
 -   [🧰 JPool Developer Hub - open Solana validator and network APIs](https://jpool.one/developer-hub)
--   [🔍 Solana Validator Graphana](https://metrics.stakeconomy.com)
+-   [🔍 Solana Validator Grafana](https://metrics.stakeconomy.com)
 -   [🥪 Solana Sandwich Finder Reports](https://github.com/FixedLocally/sandwich-finder/tree/master/reports)
 
 ---
@@ -647,9 +649,9 @@ Community feedback and contributions are welcome!
 
 ## 🧾 License, Usage & Attribution
 
-Everything in this repository - the epoch snapshots and the live data served from `data.cryptovik.info`, the stake pools registry (`stakepools_list.csv`), the aggregated history, the per-validator history files and the documentation - is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. Full text: [LICENSE](LICENSE), summary: https://creativecommons.org/licenses/by/4.0/
+Everything in this repository and everything served from `data.stakemap.info` - the epoch snapshots and the live data, the stake pools registry (`stakepools_list.csv`), the aggregated history, the per-validator history files and the documentation - is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. Full text: [LICENSE](LICENSE), summary: https://creativecommons.org/licenses/by/4.0/
 
-You may copy, redistribute, remix and build upon the data for any purpose, including commercially, as long as you give credit. **Please attribute to CryptoVik Validator** with a link to this repository or to the dashboard, and indicate if you changed the data. The validator tools listed above are separate repositories with their own (MIT) licenses.
+You may copy, redistribute, remix and build upon the data for any purpose, including commercially, as long as you give credit. **Please attribute to "StakeMap by CryptoVik"** with a link to this repository or to [stakemap.info](https://stakemap.info/), and indicate if you changed the data. A ready-made line: `Data: StakeMap by CryptoVik, as of epoch N`. The validator tools listed above are separate repositories with their own (MIT) licenses.
 
 If you use this research in a **comprehensive way** (e.g. integrating into documentation, validator tooling, or your product), a visible reference or active link back to this repository is kindly appreciated.
 
